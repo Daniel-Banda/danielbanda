@@ -1,11 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Banda</title>
+    <title>Tu Marca - Herramientas y Habilidades para Emprendedores</title>
+    <meta name="description" content="Descubre herramientas y habilidades esenciales en Fotografía, Desarrollo Web, Marketing y Creación de Contenido para impulsar tu emprendimiento. Blog, cursos y recursos para crecer.">
+    <meta name="keywords" content="emprendimiento, fotografía, desarrollo web, marketing digital, creación de contenido, blog, cursos online, habilidades emprendedoras, herramientas para emprendedores">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Tu Marca - Herramientas y Habilidades para Emprendedores">
+    <meta property="og:description" content="Descubre herramientas y habilidades esenciales en Fotografía, Desarrollo Web, Marketing y Creación de Contenido para impulsar tu emprendimiento.">
+    <meta property="og:image" content="https://tuweb.com/assets/img/social-share.jpg"> <meta property="og:url" content="https://tuweb.com"> <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tu Marca - Herramientas y Habilidades para Emprendedores">
+    <meta name="twitter:description" content="Descubre herramientas y habilidades esenciales en Fotografía, Desarrollo Web, Marketing y Creación de Contenido para impulsar tu emprendimiento.">
+    <meta name="twitter:image" content="https://tuweb.com/assets/img/social-share.jpg"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <header class="main-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <span>Tu Marca</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
+                    <li><a href="/sobreMi.html">Sobre Mí</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Impulsa tu Emprendimiento con Habilidades Clave</h1>
+                <p>Domina la Fotografía, el Desarrollo Web, el Marketing Digital y la Creación de Contenido para hacer crecer tu negocio.</p>
+                <div class="hero-actions">
+                    <a href="/blog.html" class="btn primary-btn">Explora el Blog</a>
+                    <a href="#newsletter-section" class="btn secondary-btn">Únete a la Newsletter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pillars-section">
+            <div class="container">
+                <h2>Nuestros 4 Pilares Fundamentales</h2>
+                <div class="pillar-grid">
+                    <div class="pillar-item">
+                        <img src="assets/img/icon-photography.svg" alt="Icono Fotografía">
+                        <h3>Fotografía Profesional</h3>
+                        <p>Aprende a capturar imágenes impactantes para tu marca.</p>
+                    </div>
+                    <div class="pillar-item">
+                        <img src="assets/img/icon-webdev.svg" alt="Icono Desarrollo Web">
+                        <h3>Desarrollo Web</h3>
+                        <p>Crea una presencia online sólida y funcional.</p>
+                    </div>
+                    <div class="pillar-item">
+                        <img src="assets/img/icon-marketing.svg" alt="Icono Marketing">
+                        <h3>Marketing Digital</h3>
+                        <p>Estrategias para alcanzar a tu audiencia ideal.</p>
+                    </div>
+                    <div class="pillar-item">
+                        <img src="assets/img/icon-content.svg" alt="Icono Creación de Contenido">
+                        <h3>Creación de Contenido</h3>
+                        <p>Diseña contenido relevante y atractivo para tu público.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter-section" class="newsletter-section">
+            <div class="container">
+                <h2>No te pierdas nada</h2>
+                <p>Suscríbete a nuestra newsletter y recibe directamente en tu email las últimas herramientas, tutoriales y consejos para emprendedores.</p>
+                <div class="mailerlite-form-embed">
+                    <form action="https://app.mailerlite.com/webforms/submit/YOUR_FORM_ID" data-autofill="false" method="post" target="_blank" novalidate>
+                        <input type="email" name="fields[email]" placeholder="Tu email" required>
+                        <button type="submit" class="btn primary-btn">Suscribirme</button>
+                        <input type="hidden" value="1" name="ml-submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action-courses">
+            <div class="container">
+                <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
+                <p>Descubre nuestros cursos especializados en Fotografía, Desarrollo Web, Marketing y Creación de Contenido. ¡Aprende de los mejores y transforma tu emprendimiento!</p>
+                <a href="/cursos.html" class="btn primary-btn">Explora Nuestros Cursos</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Tu Marca</h3>
+                    <p>Herramientas y habilidades para impulsar tu emprendimiento.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/tu_usuario" target="_blank" aria-label="Instagram"><img src="assets/img/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="https://twitter.com/tu_usuario" target="_blank" aria-label="Twitter"><img src="assets/img/icon-twitter.svg" alt="Twitter"></a>
+                        <a href="https://linkedin.com/in/tu_usuario" target="_blank" aria-label="LinkedIn"><img src="assets/img/icon-linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/cursos.html">Cursos</a></li>
+                        <li><a href="/sobreMi.html">Sobre Mí</a></li>
+                        <li><a href="/contacto.html">Contacto</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p>Email: <a href="mailto:info@tuweb.com">info@tuweb.com</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/XXXXXXXXXXX" target="_blank">+XX XXXXXXXXXX</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tu Marca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/mailerlite.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

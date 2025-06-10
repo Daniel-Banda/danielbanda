@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Marca | Emprendimiento</title>
+    <meta name="description" content="Ponte en contacto con Tu Marca para consultas, colaboraciones o soporte.">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="/" class="logo">
+                <span>Tu Marca</span>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
+                    <li><a href="/sobre-mi.html">Sobre Mí</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Estamos aquí para ayudarte. Ponte en contacto con nosotros.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <p><i class="icon-email"></i> Email: <a href="mailto:info@tuweb.com">info@tuweb.com</a></p>
+                        <p><i class="icon-whatsapp"></i> WhatsApp: <a href="https://wa.me/XXXXXXXXXXX" target="_blank">+XX XXXXXXXXXX</a></p>
+                        <p>También puedes seguirnos en nuestras redes sociales:</p>
+                        <div class="social-links">
+                            <a href="https://instagram.com/tu_usuario" target="_blank" aria-label="Instagram"><img src="assets/img/icon-instagram.svg" alt="Instagram"></a>
+                            <a href="https://twitter.com/tu_usuario" target="_blank" aria-label="Twitter"><img src="assets="assets/img/icon-twitter.svg" alt="Twitter"></a>
+                            <a href="https://linkedin.com/in/tu_usuario" target="_blank" aria-label="LinkedIn"><img src="assets/img/icon-linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Envíanos un Mensaje</h3>
+                        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                            <p>
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" required>
+                            </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </p>
+                            <p>
+                                <label for="subject">Asunto:</label>
+                                <input type="text" id="subject" name="subject">
+                            </p>
+                            <p>
+                                <label for="message">Mensaje:</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </p>
+                            <p>
+                                <button type="submit" class="btn primary-btn">Enviar Mensaje</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Tu Marca</h3>
+                    <p>Herramientas y habilidades para impulsar tu emprendimiento.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/tu_usuario" target="_blank" aria-label="Instagram"><img src="assets/img/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="https://twitter.com/tu_usuario" target="_blank" aria-label="Twitter"><img src="assets/img/icon-twitter.svg" alt="Twitter"></a>
+                        <a href="https://linkedin.com/in/tu_usuario" target="_blank" aria-label="LinkedIn"><img src="assets/img/icon-linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/cursos.html">Cursos</a></li>
+                        <li><a href="/sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="/contacto.html">Contacto</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p>Email: <a href="mailto:info@tuweb.com">info@tuweb.com</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/XXXXXXXXXXX" target="_blank">+XX XXXXXXXXXX</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tu Marca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

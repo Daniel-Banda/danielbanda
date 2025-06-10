@@ -1,0 +1,3 @@
+
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){ var c={ a:ma.q || [], b:ma.b || [] };return function(){(c.a?c.a.push(arguments):c.b.push(arguments));};} m[e]=function(){ var c=arguments[0];switch(c){ case 'form':return f.call(this, arguments); case 'track':return f.call(this, arguments); default:return f.call(this, arguments);}} m.ml=m.ml || m[e];ma.l=l;ma.r=r;ma.re=e;var n=a.createElement('script');var gh=a.getElementsByTagName('head')[0];n.async=1;n.src=i;gh.appendChild(n);})(window, document, 'https://static.mailerlite.com/js/universal.js', '20250610', 'ml');
+                
