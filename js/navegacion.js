@@ -17,6 +17,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('sidebarOverlay');
     const navLinks = document.querySelectorAll('#mainNav a');
 
+    // Función para obtener el primer segmento de la ruta
+    const getBasePath = (path) => {
+      if (path === '/' || path === '') return '/';
+      return '/' + path.split('/')[1];
+    };
+
+    const currentPath = getBasePath(window.location.pathname);
+
+    // Asignar clase 'active' al link que coincida con la base de la ruta
+    navLinks.forEach(link => {
+      // Obtener href base sin query ni hash
+      const linkHref = link.getAttribute('href').split(/[?#]/)[0];
+      const linkBase = getBasePath(linkHref);
+
+      if (linkBase === currentPath) {
+        link.classList.add('active');
+      }
+    });
+
     const openSidebar = () => {
       sidebar.classList.add('sidebar-open');
       btn.classList.add('active');
