@@ -33,6 +33,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.logo{
+    padding-left: 3%;
+}
+
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -97,7 +101,8 @@ img {
 }
 
 .primary-btn:hover {
-    background-color: #F5E8B6; /* Blond */
+    color: var(--background-dark);
+    background-color: var(--link-hover); /* Blond */
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -137,6 +142,12 @@ img {
     color: var(--text-light); /* Logo is light text */
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+/* nav */
+.main-nav {
+  display: flex;
+  gap: 2rem;
 }
 
 .logo img {
@@ -702,6 +713,10 @@ img {
     color: var(--accent-yellow);
 }
 
+.social-links {
+    display: flex;
+}
+
 .contact-info .social-links {
     margin-top: 30px;
 }
@@ -1006,15 +1021,69 @@ img {
     }
 }
 
-/* Optional: Hamburger menu animation */
-.hamburger-menu.active .bar:nth-child(2) {
-    opacity: 0;
+/* Sidebar lateral móvil */
+@media (max-width: 992px) {
+  .mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background-color: var(--background-card);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+    transition: left 0.3s ease;
+    z-index: 9999;
+    padding-top: 100px; /* espacio debajo del header */
+  }
+
+  .mobile-sidebar.sidebar-open {
+    left: 0;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    gap: 25px;
+  }
+
+  .main-nav a {
+    color: var(--text-light);
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .main-nav a:hover {
+    color: var(--accent-yellow);
+  }
 }
 
-.hamburger-menu.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 9998;
 }
 
-.hamburger-menu.active .bar:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+.sidebar-overlay.visible {
+  opacity: 1;
+  visibility: visible;
 }
+
+
+
+
+
+
