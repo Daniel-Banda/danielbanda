@@ -1,11 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const getRelativePath = () => {
+    const path = window.location.pathname;
+    // Si estás en la raíz: "/", "/index.html"
+    return (path === '/' || path.split('/').length <= 2) ? './' : '../';
+  };
+
+  const basePath = getRelativePath();
+
   const loadComponent = (id, url, callback) => {
     const cont = document.getElementById(id);
     if (cont) {
-      fetch(url)
+      fetch(basePath + url)
         .then(res => res.text())
         .then(html => {
-          cont.innerHTML = html;
+          // Reemplazar rutas de imágenes o scripts si es necesario
+          cont.innerHTML = html.replace(/src="\.\/assets/g, `src="${basePath}assets`);
           if (typeof callback === 'function') callback();
         });
     }
@@ -17,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('sidebarOverlay');
     const navLinks = document.querySelectorAll('#mainNav a');
 
-    // Función para obtener el primer segmento de la ruta
     const getBasePath = (path) => {
       if (path === '/' || path === '') return '/';
       return '/' + path.split('/')[1];
@@ -25,12 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const currentPath = getBasePath(window.location.pathname);
 
-    // Asignar clase 'active' al link que coincida con la base de la ruta
     navLinks.forEach(link => {
-      // Obtener href base sin query ni hash
       const linkHref = link.getAttribute('href').split(/[?#]/)[0];
       const linkBase = getBasePath(linkHref);
-
       if (linkBase === currentPath) {
         link.classList.add('active');
       }
@@ -50,19 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btn && sidebar && overlay) {
       btn.addEventListener('click', () => {
-        if (sidebar.classList.contains('sidebar-open')) {
-          closeSidebar();
-        } else {
-          openSidebar();
-        }
+        sidebar.classList.contains('sidebar-open') ? closeSidebar() : openSidebar();
       });
 
-      // Cerrar al tocar un link
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => closeSidebar());
-      });
-
-      // Cerrar al tocar fuera (en el overlay)
+      navLinks.forEach(link => link.addEventListener('click', () => closeSidebar()));
       overlay.addEventListener('click', () => closeSidebar());
     }
   });
