@@ -78,23 +78,35 @@ h1, h2, h3 {
 ---------------------------------------------------------- */
 
 .navbar {
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 18px clamp(20px, 5vw, 60px);
+    width: 100%;              /* ← nunca 100vw */
+    padding: 16px 32px;
     backdrop-filter: blur(12px);
     background: rgba(10, 10, 10, 0.65);
     border-bottom: 1px solid rgba(255,255,255,0.08);
     z-index: 999;
+    box-sizing: border-box;   /* ← IMPORTANTE */
+    overflow: hidden;         /* ← jamás permitirá desbordes visuales */
 }
 
 .nav-container {
-    max-width: 1500px;
-    margin: auto;
+    max-width: 1300px;        /* ajustable */
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;              /* ← asegura que nunca crece de más */
+    gap: 16px;
+    flex-wrap: nowrap;        /* ← evita que el logo o menú brinquen */
+}
+
+.nav-links {
+    display: flex;
+    gap: clamp(12px, 2.2vw, 28px);
+    list-style: none;
+    white-space: nowrap;      /* ← evita salto NO deseado */
 }
 
 .logo {
@@ -105,11 +117,6 @@ h1, h2, h3 {
     letter-spacing: 2px;
 }
 
-.nav-links {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-}
 
 .nav-links a {
     color: #DADADA;
