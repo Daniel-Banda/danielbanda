@@ -1,88 +1,264 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8ZDL2DHM9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Banda | Real Estate Media & 360 Experiences</title>
 
-  gtag('config', 'G-X8ZDL2DHM9');
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Banda</title>
-  <meta name="description" content="Potencia tu marca personal con herramientas clave en Fotografía, Desarrollo Web, Marketing y Creación de Contenido. Cursos, blog y recursos para destacar con tu talento.">
-  <meta name="keywords" content="marca personal, branding, fotografía, desarrollo web, marketing digital, contenido, cursos online, posicionamiento personal, herramientas digitales">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <div id="navContainer"></div>
 
-  <main>
-    <section class="hero-section">
-      <div class="container">
-        <h1>Tu Marca Personal <br> Es Tu Proyecto Más Importante</h1>
-        <p>Desarrolla habilidades clave en creación de contenido, marketing digital, fotografía, desarrollo web y <span style="color: #E9BE5F;">monetiza tu conocimiento</span>.</p>
+<!-- NAVBAR SE INYECTA DESDE navbar.js -->
+
+<!-- HERO PREMIUM -->
+<header class="hero-new fade-in">
+
+    <!-- Video de fondo -->
+    <video class="hero-video-bg" autoplay muted loop playsinline>
+        <source src="./assets/video/Bannerweb.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay oscuro opcional -->
+    <div class="hero-overlay"></div>
+
+    <!-- Contenido -->
+    <div class="hero-content">
+        <h1 class="hero-title">
+            La manera clara de mostrar <br>
+            <span class="gold">y vender tus proyectos.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Creamos recorridos 360, fotografía y video que revelan la esencia de tu proyecto, sin importar su etapa.
+        </p>
+
         <div class="hero-actions">
-          <a href="/blog.html" class="btn primary-btn">Explora el Blog</a>
-          <a href="#newsletter-section" class="btn secondary-btn">Únete a la Newsletter</a>
+            <a href="#demo" class="btn-primary">Ver demo</a>
+            <a href="https://wa.me/+523122115603" target="_blank" class="btn-secondary">Whatsapp</a>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="pillars-section">
-      <div class="container">
-        <h2>4 Pilares para Potenciar tu Marca Personal</h2>
-        <div class="pillar-grid">
-          <div class="pillar-item">
-            <img src="assets/img/icon-photography.svg" alt="Icono Fotografía">
-            <h3>Fotografía Profesional</h3>
-            <p>Domina el arte visual para proyectar tu estilo y profesionalismo.</p>
-          </div>
-     <!-- <div class="pillar-item">
-            <img src="assets/img/icon-webdev.svg" alt="Icono Desarrollo Web">
-            <h3>Desarrollo Web</h3>
-            <p>Crea tu propio espacio online que te represente 24/7.</p>
-          </div>
-          <div class="pillar-item">
-            <img src="assets/img/icon-marketing.svg" alt="Icono Marketing">
-            <h3>Marketing Digital</h3>
-            <p>Aprende a posicionarte y comunicar tu valor de forma efectiva.</p>
-          </div>
-          <div class="pillar-item">
-            <img src="assets/img/icon-content.svg" alt="Icono Creación de Contenido">
-            <h3>Creación de Contenido</h3>
-            <p>Conecta con tu audiencia creando contenido con propósito.</p>
-          </div>
+</header>
+
+
+
+<!-- STATS PREMIUM -->
+<section class="stats stagger">
+    <div class="stat-item">
+        <h2>41%</h2>
+        <p>Aumenta la confianza del comprador cuando el proyecto incluye visualizaciones inmersivas</p>
+    </div>
+    <div class="stat-item">
+        <h2>95%</h2>
+        <p>De los compradores buscan propiedades online antes de visitar físicamente</p>
+    </div>
+    <div class="stat-item">
+        <h2>+8</h2>
+        <p>Años de experiencia combinada</p>
+    </div>
+    <div class="stat-item">
+        <h2>67%</h2>
+        <p>Los proyectos con contenido visual profesional se perciben como de mayor valor</p>
+    </div>
+</section>
+
+<!-- DEMO PREMIUM -->
+<section id="demo" class="demo-split demo-light">
+
+
+    <div class="demo-block fade-up">
+    <div class="demo-text">
+        <h3>Demo - Casa Cascada</h3>
+        <p>Explora un recorrido inmersivo que combina renders, imágenes y video en un solo tour interactivo.
+
+Una experiencia diseñada para presentar cada espacio con claridad y emoción, ideal para mostrar proyectos en cualquier etapa de construcción y acelerar decisiones de compra.</p>
+
+        <a href="https://www.3dvista.com/samples/real_estate_virtual_tour.html" 
+           target="_blank" 
+           class="btn-primary">
+           Abrir en pestaña nueva
+        </a>
+
+        <div class="demo-tip">Doble clic para ver en pantalla completa.</div>
+    </div>
+
+    <div class="demo-media">
+        <iframe 
+            src="https://www.3dvista.com/samples/real_estate_virtual_tour.html"
+            frameborder="0"
+            allowfullscreen
+            allow="fullscreen"
+            scrolling="no">
+        </iframe>
+    </div>
+</div>
+
+    <div class="demo-block reverse fade-up">
+
+    <div class="demo-media">
+        <iframe 
+            src="https://www.3dvista.com/samples/zanzibar_villa_turquoise_virtual_tour.html"
+            frameborder="0"
+            allowfullscreen 
+            allow="fullscreen"
+            scrolling="no">
+        </iframe>
+    </div>
+
+    <div class="demo-text">
+        <h3>Demo - Villa Turquose </h3>
+        <p>Descubre un recorrido inmersivo que conecta arquitectura, entorno y experiencia.
+
+Un tour que integra vistas aéreas, infografías, imágenes y video para comunicar la esencia del desarrollo, su filosofía, sus amenidades y su estilo de vida en una presentación visual clara y emocionante.</p>
+
+        <a href="https://www.3dvista.com/samples/zanzibar_villa_turquoise_virtual_tour.html" 
+           target="_blank" 
+           class="btn-secondary">
+           Abrir en pestaña nueva
+        </a>
+
+        <div class="demo-tip">Doble clic para ver en pantalla completa.</div>
+    </div>
+
+</div>
+</section>
+
+
+<!-- SERVICIOS MODERNOS -->
+<section class="services-new" id="services">
+    <h2 class="section-title">Servicios</h2>
+
+    <div class="service-cards stagger">
+        <div class="service-card stagger">
+            <h3>Recorridos 360</h3>
+            <p>Experiencias interactivas que permiten mostrar tu proyecto incluso antes de construirse.</p>
         </div>
-      </div>-->
-    </section> 
 
-    <section id="newsletter-section" class="newsletter-section">
-      <div class="container">
-         <div class="ml-embedded" data-form="tC4B2s"></div>
-      </div>
-    </section>
+        <div class="service-card stagger">
+            <h3>Producción Visual</h3>
+            <p>Contenido visual profesional que comunica el valor y la esencia de tu desarrollo.</p>
+        </div>
 
-    <section class="call-to-action-courses">
-      <div class="container">
-        <h2>¿Listo para destacar con tu marca personal?</h2>
-        <p>Accede a cursos prácticos en Fotografía, Web, Marketing y Contenido. Aprende a comunicar quién eres, qué haces y por qué importas.</p>
-        <a href="/cursos.html" class="btn primary-btn">Explora Nuestros Cursos</a>
-      </div>
-    </section>
-  </main>
+        <div class="service-card stagger">
+            <h3>Webs para Proyectos</h3>
+            <p>Desarrollo web inmobiliario que convierte tu proyecto en una experiencia interactiva y visualmente inolvidable.</p>
+        </div>
+    </div>
+</section>
 
-  <div id="footerContainer"></div>
-  
-  <script src="js/newsletter.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/navegacion.js"></script>
+<!-- TOUR 360 DESTACADO -->
+<section class="tour-container">
+    <h2 class="section-title">Lotificación</h2>
+
+    <div class="tour-wrapper">
+        <iframe 
+            src="./tour360/index.htm"
+            frameborder="0"
+            allowfullscreen
+            allow="xr-spatial-tracking; fullscreen"
+            scrolling="no"
+            class="tour-frame">
+        </iframe>
+    </div>
+
+    <p class="tour-tip">Doble clic para ver en pantalla completa.</p>
+</section>
+
+
+
+<section class="benefits">
+    
+    <h2 class="section-title">El valor detrás de una buena presentación</h2>
+
+    <div class="benefits-grid stagger">
+        
+        <div class="benefit-card">
+            Ahorra tiempo al equipo y reduce distancias.
+        </div>
+
+        <div class="benefit-card">
+            Disponible 24/7 para que los clientes exploren sin agendar visita.
+        </div>
+
+        <div class="benefit-card">
+            Filtra prospectos y te permite llegar a un mayor mercado.
+        </div>
+
+        <div class="benefit-card">
+            Centraliza renders, planos, fotos, video y 360 en una sola plataforma.
+        </div>
+
+        <div class="benefit-card">
+            Reduce dudas y acelera decisiones mostrando el proyecto con claridad.
+        </div>
+
+        <div class="benefit-card">
+            Presentación premium que eleva la percepción y el valor del desarrollo.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROCESO EDITORIAL -->
+<section class="process-new" id="process">
+    <h2 class="section-title">El Proceso</h2>
+
+    <div class="process-line stagger">
+        <div class="step">
+            <span>01</span>
+            <h3>Planificación</h3>
+            <p>Analizamos el proyecto y definimos objetivos comerciales.</p>
+        </div>
+
+        <div class="step">
+            <span>02</span>
+            <h3>Producción</h3>
+            <p>Foto, video, dron y tomas 360 en una jornada optimizada.</p>
+        </div>
+
+        <div class="step">
+            <span>03</span>
+            <h3>Desarrollo</h3>
+            <p>Diseño e integración de la experiencia web y el tour interactivo.</p>
+        </div>
+
+        <div class="step">
+            <span>04</span>
+            <h3>Entrega & Soporte</h3>
+            <p>Hosting, mantenimiento y soporte continuo.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT EDITORIAL -->
+<section class="about-new fade-up" id="about">
+    <h2 class="section-title">Sobre Mí</h2>
+
+    <p class="about-text">
+        Soy Daniel Banda, creador visual especializado en contenido inmobiliario, recorridos 360 y desarrollo web para proyectos.
+        Mi misión es elevar la forma en que se presentan los desarrollos a inversionistas, compradores y equipos de venta.
+    </p>
+</section>
+
+
+<!-- CTA FINAL -->
+<section class="cta-final fade-up">
+    <h2>Presenta tu proyecto con la claridad que tus clientes necesitan.</h2>
+    <a href="https://wa.me/+523122115603" target="_blank" class="btn-primary">Solicitar Cotización</a>
+</section>
+
+<!-- FOOTER SE INYECTA DESDE footer.js -->
+
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/footer.js"></script>
+<script src="./scripts/script.js"></script>
+
 </body>
 </html>
