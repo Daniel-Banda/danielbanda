@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Inmobiliario | Presentación Premium</title>
+    <link rel="stylesheet" href="./Landing-Simple.css">
+</head>
+
+<body>
+
+<!-- ============================= -->
+<!-- 1) HERO / BANNER + MENÚ -->
+<!-- ============================= -->
+
+<header class="hero">
+    
+
+    <div class="postit">
+        BLOQUE #1 <br>
+        Banner + Menú (redirecciona a cada sección de la landing page)
+    </div>
+
+    <nav class="nav">
+        <div class="nav-logo">Plantilla Landing page Real State</div>
+        <ul class="nav-links">
+            <li><a href="#tour">Recorrido</a></li>
+            <li><a href="#info">Detalles</a></li>
+            <li><a href="#razones">Razones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-inner">
+        <h1>Personaliza cada sección</h1>
+        <p>Plantilla estructural sin diseño final. Su función es mostrar la distribución, el orden de los 5 bloques y el flujo de una presentación inmobiliaria.</p>
+    </div>
+
+</header>
+
+
+
+<!-- ============================= -->
+<!-- 2) RECORRIDO / VIDEO / GALERÍA (SLIDER) -->
+<!-- ============================= -->
+<section id="tour" class="section media-section">
+
+    <div class="postit">
+        BLOQUE #2 <br>
+        Presentación del proyecto / inmueble<br>
+         ***Incluye solo una de las siguientes secciones: Recorrido 360, Video o Galería.***
+    </div>
+        <!-- ... tu contenido actual ... -->
+
+    <div class="media-tabs">
+        <button class="media-btn active" data-target="tour360">Recorrido 360</button>
+        <button class="media-btn" data-target="video">Video</button>
+        <button class="media-btn" data-target="galeria">Galería</button>
+    </div>
+
+    <div class="media-container">
+
+        <!-- Recorrido 360 -->
+        <div id="tour360" class="media-item active">
+            <div class="media-frame">
+                <iframe 
+                    src="https://www.3dvista.com/samples/real_estate_virtual_tour.html" 
+                    frameborder="0">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Video -->
+        <div id="video" class="media-item">
+            <div class="media-frame">
+                <video autoplay loop muted playsinline>
+                    <source src="../../assets/video/Bannerwebfn2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+   <!-- Galería / Carrusel -->
+<div id="galeria" class="media-item">
+
+    <div class="gallery-viewer">
+
+        <!-- Imagen principal -->
+        <div class="gallery-main">
+            <button class="gallery-prev">←</button>
+            <img id="gallery-main-img" src="../../assets/Img/casauno.jpg" alt="Imagen principal">
+            <button class="gallery-next">→</button>
+        </div>
+
+        <!-- Miniaturas -->
+        <div class="gallery-thumbs">
+            <img src="../../assets/Img/casauno.jpg" data-index="0" class="thumb active">
+            <img src="../../assets/Img/casados.jpg" data-index="1" class="thumb">
+            <img src="../../assets/Img/casa3.jpg" data-index="2" class="thumb">
+            <img src="../../assets/Img/casacuatro.jpg" data-index="3" class="thumb">
+            <img src="../../assets/Img/casacinco.jpg" data-index="4" class="thumb">
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<!-- ============================= -->
+<!-- 3) INFO DEL PROYECTO / CARACTERÍSTICAS -->
+<!-- ============================= -->
+<section id="info" class="section section-blueprint">
+
+    <div class="postit">
+        BLOQUE #3 <br>
+        Características técnicas del desarrollo
+    </div>
+
+    <!-- ... tu contenido actual ... -->
+
+
+    <!-- === PARTE A — TEXTO IZQUIERDA + PLANO DERECHA === -->
+    <div class="blueprint-container">
+
+        <!-- TEXT EDITORIAL -->
+        <div class="blueprint-text">
+            <h2>Características principales</h2>
+
+            <p>
+                Este proyecto ha sido diseñado con una distribución funcional,
+                iluminación natural estratégica y espacios pensados para el día a día.
+                Su arquitectura moderna prioriza la amplitud, la ventilación
+                y la proporción visual entre áreas sociales y privadas.
+            </p>
+
+            <div class="info-detail-group">
+
+                <div class="info-detail">
+                    <h3>Superficie</h3>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div class="info-detail">
+                    <h3>Ubicación</h3>
+                    <p></p>
+                    <p></p>
+                </div>
+
+                <div class="info-detail">
+                    <h3>Estado legal</h3>
+                    <p></p>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- IMAGEN / PLANO DERECHA -->
+        <div class="blueprint-image">
+            <img src="../../assets/Img/plano.png" alt="Plano arquitectónico">
+        </div>
+
+    </div>
+
+
+    <!-- === PARTE B — ICONOS DE DISTRIBUCIÓN === -->
+    <div class="distribution-section">
+
+        <h2 class="distribution-title">Distribución del inmueble</h2>
+
+        <div class="distribution-grid">
+
+            <div class="dist-item">
+                <span class="dist-icon">🛏</span>
+                <p>3 Recámaras</p>
+            </div>
+
+            <div class="dist-item">
+                <span class="dist-icon">🛁</span>
+                <p>2.5 Baños</p>
+            </div>
+
+            <div class="dist-item">
+                <span class="dist-icon">🚗</span>
+                <p>Cochera para 2 autos</p>
+            </div>
+
+            <div class="dist-item">
+                <span class="dist-icon">🍽</span>
+                <p>Cocina equipada</p>
+            </div>
+
+            <div class="dist-item">
+                <span class="dist-icon">🛋</span>
+                <p>Sala y comedor amplios</p>
+            </div>
+
+            <div class="dist-item">
+                <span class="dist-icon">🌿</span>
+                <p>Patio / Jardín</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ============================= -->
+<!-- 4) RAZONES PARA ELEGIR ESTE INMUEBLE -->
+<!-- ============================= -->
+<section id="razones" class="section reasons-section">
+
+    <div class="postit">
+        BLOQUE #4 <br>
+        Beneficios, diferenciadores, mapa y cualquier tipo de información que aumenta el valor percibido para el cliente <br>
+        *** Incluye solo 2 de las secciones mostradas (a elección)***.
+    </div>
+
+    <!-- ... tu contenido actual ... -->
+
+    <!-- Pestañas -->
+    <div class="reasons-tabs">
+        <button class="reasons-btn active" data-target="optA">Diferenciales</button>
+        <button class="reasons-btn" data-target="optB">Amenidades</button>
+        <button class="reasons-btn" data-target="optC">Mapa</button>
+        <button class="reasons-btn" data-target="optD">Testimonios</button>
+        <button class="reasons-btn" data-target="optE">Comparativo</button>
+    </div>
+
+    <!-- Contenedor dinámico -->
+    <div class="reasons-container">
+
+        <!-- ======================= -->
+        <!-- Opción A – Diferenciales -->
+        <!-- ======================= -->
+
+        <div id="optA" class="reason-block active">
+            <h2 class="section-title">¿Por qué este inmueble es una gran inversión?</h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    <h4>Ubicación estratégica</h4>
+                    <p>Cerca de escuelas, comercios y vías principales.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Diseño inteligente</h4>
+                    <p>Espacios amplios, luz natural y ventilación cruzada.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Alta plusvalía</h4>
+                    <p>Zona en crecimiento con proyección estable.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Acabados premium</h4>
+                    <p>Materiales durables y estética contemporánea.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Seguridad</h4>
+                    <p>Privada, acceso controlado y vigilancia.</p>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Ideal para vivir o invertir</h4>
+                    <p>Facilita renta y mejora el retorno de inversión.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ======================= -->
+        <!-- Opción B – Amenidades -->
+        <!-- ======================= -->
+
+<div id="optB" class="reason-block">
+    <h2 class="section-title">Lo que hace especial vivir aquí</h2>
+
+    <div class="reasons-grid">
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/terraza.jpg" alt="Terraza">
+            </div>
+            <h4>Terraza</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/jardin.jpg" alt="Jardín">
+            </div>
+            <h4>Jardín</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/area-social.jpg" alt="Área social">
+            </div>
+            <h4>Área social</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/alberca.jpg" alt="Alberca">
+            </div>
+            <h4>Alberca</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/gimnasio.jpg" alt="Gimnasio">
+            </div>
+            <h4>Gimnasio</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/pet.jpg" alt="Pet friendly">
+            </div>
+            <h4>Pet friendly</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/estacionamiento.jpg" alt="Estacionamiento techado">
+            </div>
+            <h4>Estacionamiento techado</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/roof.jpg" alt="Roof garden">
+            </div>
+            <h4>Roof garden</h4>
+        </div>
+
+        <div class="reason-card">
+            <div class="reason-img">
+                <img src="./assets/amenidades/vistas.jpg" alt="Vistas panorámicas">
+            </div>
+            <h4>Vistas panorámicas</h4>
+        </div>
+
+    </div>
+</div>
+
+
+        <!-- ======================= -->
+        <!-- Opción C – Zona / Mapa -->
+        <!-- ======================= -->
+
+        <div id="optC" class="reason-block">
+            <h2 class="section-title">Todo lo que necesitas, a minutos</h2>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18..."
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="map-info">
+                <p><strong>2 min</strong> — Escuelas</p>
+                <p><strong>5 min</strong> — Centros comerciales</p>
+                <p><strong>8 min</strong> — Hospitales</p>
+                <p><strong>Zona en crecimiento y alta plusvalía.</strong></p>
+            </div>
+        </div>
+
+        <!-- ======================= -->
+        <!-- Opción D – Testimonios -->
+        <!-- ======================= -->
+
+        <div id="optD" class="reason-block">
+            <h2 class="section-title">Personas que ya confiaron en nosotros</h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    <p>"El proceso fue claro y seguro. Me entregaron todo conforme a lo prometido."</p>
+                    <small>- Cliente satisfecho</small>
+                </div>
+
+                <div class="reason-card">
+                    <p>"Transparencia total. Excelente atención y cumplimiento legal."</p>
+                    <small>- Inversionista</small>
+                </div>
+
+                <div class="reason-card">
+                    <p>"Calidad, diseño y seriedad en cada paso del proceso."</p>
+                    <small>- Comprador</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ======================= -->
+        <!-- Opción E – Comparativo -->
+        <!-- ======================= -->
+
+        <div id="optE" class="reason-block">
+            <h2 class="section-title">Lo que este inmueble ofrece mejor que otros</h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    <h4>Más m² por el mismo precio</h4>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Mejor ubicación</h4>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Más iluminación natural</h4>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Distribución más funcional</h4>
+                </div>
+
+                <div class="reason-card">
+                    <h4>Mayor retorno como inversión</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ============================= -->
+<!-- 5) FOOTER -->
+<!-- ============================= -->
+
+<footer id="contacto" class="footer">
+
+    <div class="postit">
+        BLOQUE #5 <br>
+        Footer, cierre de la web con enlaces a redes sociales e información adicional.
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-social">
+
+        <a href="https://www.instagram.com/tuperfil" target="_blank" class="social-link">
+            <img src="../../assets/icons/Instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://wa.me/523121234567" target="_blank" class="social-link">
+            <img src="../../assets/icons/Tiktok.png" alt="WhatsApp">
+        </a>
+
+        <a href="mailto:ventas@tuproyecto.com" class="social-link">
+            <img src="../../assets/icons/Youtube.png" alt="Email">
+        </a>
+    </div>
+
+    <p>© 2025 | Presentación Inmobiliaria</p>
+    <p>Todos los derechos reservados.</p>
+
+</footer>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="/#demo">Demo</a></li>
                 <li><a href="/#process">Proceso</a></li>
                 <li><a href="/#about">Sobre mí</a></li>
+                <li><a href="../Plantillas/LandingUno/Home.html">plantilla</a></li>
             </ul>
 
             <div class="menu-toggle" id="mobile-menu">☰</div>
