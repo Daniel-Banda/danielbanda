@@ -1,33 +1,26 @@
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
+const burger = document.getElementById("burger");
+const mnav = document.getElementById("mnav");
+
+if (burger && mnav) {
+  burger.addEventListener("click", () => {
+    const open = mnav.classList.toggle("is-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  mnav.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      mnav.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
     });
-});
+  });
+}
 
-// ANIMACIONES PREMIUM AWWARDS STYLE
+const fakeSubmit = document.getElementById("fakeSubmit");
+const formNote = document.getElementById("formNote");
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    // Hero aparece suavemente
-    setTimeout(() => {
-        document.querySelector(".hero-new")?.classList.add("hero-loaded");
-        document.querySelector(".navbar")?.classList.add("hero-loaded");
-    }, 200);
-
-    // Observer para fade-up / fade-in / reveal-img / stagger
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("animate");
-            }
-        });
-    }, { threshold: 0.2 });
-
-    // Seleccionar elementos animables
-    document.querySelectorAll(".fade-up, .fade-in, .reveal-img, .stagger")
-        .forEach(el => observer.observe(el));
-});
+if (fakeSubmit && formNote) {
+  fakeSubmit.addEventListener("click", () => {
+    formNote.textContent = "Listo. Conectamos este formulario a tu email/CRM cuando lo publiques.";
+    setTimeout(() => (formNote.textContent = ""), 4500);
+  });
+}

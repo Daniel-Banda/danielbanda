@@ -1,264 +1,385 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Banda | Real Estate Media & 360 Experiences</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Banda | Real Estate Studio</title>
 
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
 <body>
+  <!-- HERO DARK (como la referencia) -->
+  <header class="hero" id="inicio">
+    <nav class="nav">
+      <div class="wrap nav__inner">
+        <a class="logo" href="#inicio">
+          <span class="logo__mark">DB</span>
+          <span class="logo__text">DANIEL BANDA</span>
+        </a>
 
-<!-- NAVBAR SE INYECTA DESDE navbar.js -->
+        <div class="nav__links">
+          <a href="#services">Servicios</a>
+          <a href="#tour">Tour 360</a>
+          <a href="#facts">Datos</a>
+          <a href="#works">Mi trabajo</a>
+          <a href="#about">Sobre Mí</a>
+          <a href="#contact" class="nav__cta">Contacto</a>
+        </div>
 
-<!-- HERO PREMIUM -->
-<header class="hero-new fade-in">
+        <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-controls="mnav" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
 
-    <!-- Video de fondo -->
-    <video class="hero-video-bg" autoplay muted loop playsinline>
-        <source src="./assets/video/Bannerwebfn2.mp4" type="video/mp4">
-    </video>
+      <div class="mnav" id="mnav">
+        <div class="wrap mnav__inner">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#tour">Tour 360</a>
+          <a href="#facts">Facts</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Overlay oscuro opcional -->
-    <div class="hero-overlay"></div>
+  <div class="hero__media">
+  <video class="hero__video" autoplay muted loop playsinline preload="metadata">
+    <!-- EJEMPLO: ./assets/hero.mp4  |  ./video/hero.mp4  |  ./media/hero.mp4 -->
+    <source src="./assets/video/Bannerwebfn2.mp4" type="video/mp4" />
+  </video>
+  <div class="hero__overlay"></div>
+</div>
 
-    <!-- Contenido -->
-    <div class="hero-content">
-        <h1 class="hero-title">
-            La mejor manera de mostrar <br>
-            <span class="gold">y vender tus proyectos.</span>
+
+    <div class="wrap hero__content">
+      <div class="hero__title">
+        <div class="hero__kicker">REAL ESTATE STUDIO</div>
+        <h1>
+          TOURS 360 · WEB · CONTENIDO
+          <span>Para vender inmuebles mejor y más rápido<br>
+
+    </span>
         </h1>
+      </div>
 
-        <p class="hero-subtitle">
-            Creamos Paginas web, recorridos 360, fotografía y video que revelan la esencia de tu proyecto, sin importar su etapa.
+      <div class="hero__mini">
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#tour">Ver Tour 360</a>
+          <a class="btn btn--ghostlight" href="#contact">Cotizar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- SERVICES (según tu esquema: Tour 360 / Web / Contenido) -->
+  <section class="section section--white" id="services">
+    <div class="wrap">
+      <div class="head">
+        <div class="head__kicker">SERVICES</div>
+        <h2 class="head__title">Todo lo que tu proyecto necesita</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__top">
+            <h3>Tour 360</h3>
+          </div>
+          <p>
+            Recorridos interactivos con hotspots, galería, mapa/planta y CTA. Perfecto para preventa, renta y propiedades premium.
+          </p>
+          <ul>
+            <li>Hotspots + fichas</li>
+            <li>Mapa / planta</li>
+            <li>CTA a WhatsApp</li>
+          </ul>
+          <a href="#tour" class="card__link">Ver demo →</a>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Desarrollo web</h3>
+          </div>
+          <p>
+            Landing minimalista tipo arquitectura: renders grandes, copy claro, estructura de conversión y velocidad.
+          </p>
+          <ul>
+            <li>Diseño editorial</li>
+            <li>Mobile-first</li>
+            <li>SEO básico</li>
+          </ul>
+          <a href="#contact" class="card__link">Solicitar propuesta →</a>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Contenido pro</h3>
+          </div>
+          <p>
+            Foto, video y reels para mostrar amenidades, detalles y ubicación. Hecho para redes y anuncios.
+          </p>
+          <ul>
+            <li>Foto arquitectura</li>
+            <li>Reels (vertical)</li>
+            <li>Dron (opcional)</li>
+          </ul>
+          <a href="#works" class="card__link">Ver trabajos →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOUR 360 + EXPLICACIÓN (del esquema) -->
+  <section class="section section--white" id="tour">
+    <div class="wrap">
+      <div class="tourRow">
+        <div class="tourRow__left">
+          <div class="head">
+            <div class="head__kicker">TOUR 360</div>
+            <h2 class="head__title">Exploración que convierte</h2>
+            <p class="head__sub">
+              El prospecto entiende el proyecto sin llamada eterna: recorre, ve specs, mira amenidades y pide info.
+            </p>
+          </div>
+
+          <div class="tourFeatures">
+            <div class="tfeat">
+              <span class="dot"></span>
+              <div>
+                <div class="tfeat__title">Hotspots con información</div>
+                <div class="tfeat__text">Acabados, brochure, renders, precios “desde”, disponibilidad.</div>
+              </div>
+            </div>
+            <div class="tfeat">
+              <span class="dot"></span>
+              <div>
+                <div class="tfeat__title">Galería y planos</div>
+                <div class="tfeat__text">Centraliza el material para que el cliente avance más rápido.</div>
+              </div>
+            </div>
+            <div class="tfeat">
+              <span class="dot"></span>
+              <div>
+                <div class="tfeat__title">CTA directo</div>
+                <div class="tfeat__text">WhatsApp / formulario para agendar visita o pedir brochure.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tourActions">
+            <a class="btn btn--dark" href="#contact">Quiero un tour</a>
+            <a class="btn btn--line" href="#works">Ver resultados</a>
+          </div>
+        </div>
+
+<div class="tourFrame">
+<iframe
+  src="./tour360/index.html"
+  loading="lazy"
+  title="Tour 360 Daniel Banda"
+  allow="fullscreen"
+  allowfullscreen>
+</iframe>
+</div>
+
+
+      </div>
+
+      <!-- mini blocks del esquema: fotos/renders / ubicacion / multimedia -->
+      <div class="miniBlocks">
+        <div class="miniBlock">
+          <div class="miniBlock__title">Fotos / Renders</div>
+          <div class="miniBlock__text">Integramos tus assets para una narrativa premium.</div>
+        </div>
+        <div class="miniBlock">
+          <div class="miniBlock__title">Ubicación</div>
+          <div class="miniBlock__text">Mapas, puntos clave y contexto para cerrar más rápido.</div>
+        </div>
+        <div class="miniBlock">
+          <div class="miniBlock__title">Multimedia</div>
+          <div class="miniBlock__text">Reels, foto y video alineados a la landing.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS DARK (calcado) -->
+  <section class="facts" id="facts">
+    <div class="wrap facts__inner">
+      <div class="facts__left">
+        <div class="facts__kicker">SOME INTERESTING</div>
+        <h2 class="facts__title">FACTS</h2>
+        <p class="facts__sub">
+          Números de ejemplo (pon aquí tus métricas reales cuando quieras).
+        </p>
+      </div>
+
+      <div class="facts__right">
+        <div class="fact">
+          <div class="fact__num">461</div>
+          <div class="fact__label">Leads atendidos</div>
+        </div>
+        <div class="fact">
+          <div class="fact__num">168</div>
+          <div class="fact__label">Piezas entregadas</div>
+        </div>
+        <div class="fact">
+          <div class="fact__num">222</div>
+          <div class="fact__label">Assets integrados</div>
+        </div>
+      </div>
+
+      <div class="factsNumber">02</div>
+    </div>
+  </section>
+
+  <!-- WORKS (calcado: our featured works) -->
+  <section class="section section--white" id="works">
+    <div class="wrap">
+      <div class="head head--center">
+        <div class="head__kicker">OUR FEATURED</div>
+        <h2 class="head__title">WORKS</h2>
+        <div class="head__line"></div>
+      </div>
+
+      <div class="worksGrid">
+        <a class="work" href="#contact">
+          <img src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1800&q=80" alt="Proyecto 1">
+          <div class="work__cap">
+            <div class="work__name">Preventa</div>
+            <div class="work__tag">Landing + Tour</div>
+          </div>
+        </a>
+
+        <a class="work" href="#contact">
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1800&q=80" alt="Proyecto 2">
+          <div class="work__cap">
+            <div class="work__name">Interior</div>
+            <div class="work__tag">Foto + Reels</div>
+          </div>
+        </a>
+
+        <a class="work" href="#contact">
+          <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1800&q=80" alt="Proyecto 3">
+          <div class="work__cap">
+            <div class="work__name">Amenidades</div>
+            <div class="work__tag">Contenido</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- SECTION 01 (como referencia: bloque blanco + número gigante) -->
+  <section class="section section--white" id="about">
+    <div class="wrap section__grid">
+      <div class="section__left">
+        <div class="section__eyebrow">WELCOME WE ARE</div>
+        <h2 class="section__title">Sobre Mí</h2>
+        <p class="section__text">
+          Soy Daniel Banda, creador visual <strong>especializado en contenido para Real Estate, </strong>recorridos 360 y desarrollo web para proyectos. Mi misión es elevar la forma en que se presentan los desarrollos a inversionistas, compradores y equipos de venta.
+          y <strong>contenido profesional</strong> (foto, video y reels). La meta: menos dudas, más claridad y más leads.
         </p>
 
-        <div class="hero-actions">
-            <a href="#demo" class="btn-primary">Ver demo</a>
-            <a href="https://wa.me/+523122115603" target="_blank" class="btn-secondary">Whatsapp</a>
+        <div class="divider"></div>
+
+        <div class="miniList">
+          <div class="miniList__label">Our process</div>
+          <div class="miniList__items">
+            <span>Brief</span>
+            <span>Producción</span>
+            <span>Entrega</span>
+          </div>
+          <a class="btn btn--dark" href="#contact">Get proposal</a>
         </div>
+      </div>
+
+      <div class="section__right">
+        <div class="panelImage">
+          <img
+            src="https://images.unsplash.com/photo-1505692952047-1a78307da8f2?auto=format&fit=crop&w=1600&q=80"
+            alt="Render / inmobiliario"
+          />
+        </div>
+
+        <div class="sectionNumber"></div>
+      </div>
     </div>
+  </section>
 
-</header>
+  <!-- CONTACT (del esquema: CTA final) -->
+  <section class="section section--white" id="contact">
+    <div class="wrap contact">
+      <div class="contact__left">
+        <div class="head">
+          <div class="head__kicker">CONTACT</div>
+          <h2 class="head__title">Hagamos tu proyecto vendible.</h2>
+          <p class="head__sub">
+            Envíame el nombre del desarrollo y qué assets ya tienes (rendes, brochure, planos, etc.). Te digo el paquete ideal.
+          </p>
+        </div>
 
+        <div class="contact__actions">
+          <a class="btn btn--dark" target="_blank" rel="noopener"
+             href="https://wa.me/523122115603?text=Hola%20Daniel%2C%20quiero%20cotizar%20Tour%20360%20%2B%20Landing%20para%20Real%20Estate.">
+            WhatsApp
+          </a>
+          <a class="btn btn--line" href="mailto:contacto@danielbanda.com">Email</a>
+        </div>
+      </div>
 
+      <form class="form" onsubmit="return false;">
+        <label>
+          Nombre
+          <input type="text" placeholder="Tu nombre" />
+        </label>
+        <label>
+          Proyecto
+          <input type="text" placeholder="Desarrollo / Inmueble / Terreno" />
+        </label>
+        <label>
+          Qué necesitas
+          <select>
+            <option>Tour 360</option>
+            <option>Desarrollo web</option>
+            <option>Contenido (foto / video / reels)</option>
+            <option>Paquete completo</option>
+          </select>
+        </label>
+        <label>
+          Mensaje
+          <textarea rows="4" placeholder="Ubicación, etapa, y assets disponibles..."></textarea>
+        </label>
 
-<!-- STATS PREMIUM -->
-<section class="stats stagger">
-    <div class="stat-item">
-        <h2>41%</h2>
-        <p>Aumenta la confianza del comprador cuando el proyecto incluye visualizaciones inmersivas</p>
+        <button class="btn btn--dark btn--full" id="fakeSubmit">Enviar (demo)</button>
+        <div class="form__note" id="formNote" aria-live="polite"></div>
+      </form>
     </div>
-    <div class="stat-item">
-        <h2>95%</h2>
-        <p>De los compradores buscan propiedades online antes de visitar físicamente</p>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__left">
+        <div class="logo logo--footer">
+          <span class="logo__mark">DB</span>
+          <span class="logo__text">DANIEL BANDA</span>
+        </div>
+        <p>Tours 360 · Web · Contenido profesional para Real Estate.</p>
+      </div>
+      <div class="footer__right">
+        <a href="#inicio">Arriba</a>
+        <a href="#services">Servicios</a>
+        <a href="#contact">Contacto</a>
+      </div>
     </div>
-    <div class="stat-item">
-        <h2>+8</h2>
-        <p>Años de experiencia combinada</p>
-    </div>
-    <div class="stat-item">
-        <h2>67%</h2>
-        <p>Los proyectos con contenido visual profesional se perciben como de mayor valor</p>
-    </div>
-</section>
+  </footer>
 
-<!-- DEMO PREMIUM -->
-<section id="demo" class="demo-split demo-light">
-
-
-    <div class="demo-block fade-up">
-    <div class="demo-text">
-        <h3>Demo - Casa Cascada</h3>
-        <p>Explora un recorrido inmersivo que combina renders, imágenes y video en un solo tour interactivo.
-
-Una experiencia diseñada para presentar cada espacio con claridad y emoción, ideal para mostrar proyectos en cualquier etapa de construcción y acelerar decisiones de compra.</p>
-
-        <a href="https://www.3dvista.com/samples/real_estate_virtual_tour.html" 
-           target="_blank" 
-           class="btn-primary">
-           Abrir en pestaña nueva
-        </a>
-
-        <div class="demo-tip">Doble clic para ver en pantalla completa.</div>
-    </div>
-
-    <div class="demo-media">
-        <iframe 
-            src="https://www.3dvista.com/samples/real_estate_virtual_tour.html"
-            frameborder="0"
-            allowfullscreen
-            allow="fullscreen"
-            scrolling="no">
-        </iframe>
-    </div>
-</div>
-
-    <div class="demo-block reverse fade-up">
-
-    <div class="demo-media">
-        <iframe 
-            src="https://www.3dvista.com/samples/zanzibar_villa_turquoise_virtual_tour.html"
-            frameborder="0"
-            allowfullscreen 
-            allow="fullscreen"
-            scrolling="no">
-        </iframe>
-    </div>
-
-    <div class="demo-text">
-        <h3>Demo - Villa Turquose </h3>
-        <p>Descubre un recorrido inmersivo que conecta arquitectura, entorno y experiencia.
-
-Un tour que integra vistas aéreas, infografías, imágenes y video para comunicar la esencia del desarrollo, su filosofía, sus amenidades y su estilo de vida en una presentación visual clara y emocionante.</p>
-
-        <a href="https://www.3dvista.com/samples/zanzibar_villa_turquoise_virtual_tour.html" 
-           target="_blank" 
-           class="btn-secondary">
-           Abrir en pestaña nueva
-        </a>
-
-        <div class="demo-tip">Doble clic para ver en pantalla completa.</div>
-    </div>
-
-</div>
-</section>
-
-
-<!-- SERVICIOS MODERNOS -->
-<section class="services-new" id="services">
-    <h2 class="section-title">Servicios</h2>
-
-    <div class="service-cards stagger">
-        <div class="service-card stagger">
-            <h3>Recorridos 360</h3>
-            <p>Experiencias interactivas que permiten mostrar tu proyecto incluso antes de construirse.</p>
-        </div>
-
-        <div class="service-card stagger">
-            <h3>Producción Visual</h3>
-            <p>Contenido visual profesional que comunica el valor y la esencia de tu desarrollo.</p>
-        </div>
-
-        <div class="service-card stagger">
-            <h3>Webs para Proyectos</h3>
-            <p>Desarrollo web inmobiliario que convierte tu proyecto en una experiencia interactiva y visualmente inolvidable.</p>
-        </div>
-    </div>
-</section>
-
-<!-- TOUR 360 DESTACADO -->
-<section class="tour-container">
-    <h2 class="section-title">Lotificación</h2>
-
-    <div class="tour-wrapper">
-        <iframe 
-            src="./tour360/index.htm"
-            frameborder="0"
-            allowfullscreen
-            allow="xr-spatial-tracking; fullscreen"
-            scrolling="no"
-            class="tour-frame">
-        </iframe>
-    </div>
-
-    <p class="tour-tip">Doble clic para ver en pantalla completa.</p>
-</section>
-
-
-
-<section class="benefits">
-    
-    <h2 class="section-title">El valor detrás de una buena presentación</h2>
-
-    <div class="benefits-grid stagger">
-        
-        <div class="benefit-card">
-            Ahorra tiempo al equipo y reduce distancias.
-        </div>
-
-        <div class="benefit-card">
-            Disponible 24/7 para que los clientes exploren sin agendar visita.
-        </div>
-
-        <div class="benefit-card">
-            Filtra prospectos y te permite llegar a un mayor mercado.
-        </div>
-
-        <div class="benefit-card">
-            Centraliza renders, planos, fotos, video y 360 en una sola plataforma.
-        </div>
-
-        <div class="benefit-card">
-            Reduce dudas y acelera decisiones mostrando el proyecto con claridad.
-        </div>
-
-        <div class="benefit-card">
-            Presentación premium que eleva la percepción y el valor del desarrollo.
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- PROCESO EDITORIAL -->
-<section class="process-new" id="process">
-    <h2 class="section-title">El Proceso</h2>
-
-    <div class="process-line stagger">
-        <div class="step">
-            <span>01</span>
-            <h3>Planificación</h3>
-            <p>Analizamos el proyecto y definimos objetivos comerciales.</p>
-        </div>
-
-        <div class="step">
-            <span>02</span>
-            <h3>Producción</h3>
-            <p>Foto, video, dron y tomas 360 en una jornada optimizada.</p>
-        </div>
-
-        <div class="step">
-            <span>03</span>
-            <h3>Desarrollo</h3>
-            <p>Diseño e integración de la experiencia web y el tour interactivo.</p>
-        </div>
-
-        <div class="step">
-            <span>04</span>
-            <h3>Entrega & Soporte</h3>
-            <p>Hosting, mantenimiento y soporte continuo.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- ABOUT EDITORIAL -->
-<section class="about-new fade-up" id="about">
-    <h2 class="section-title">Sobre Mí</h2>
-
-    <p class="about-text">
-        Soy Daniel Banda, creador visual especializado en contenido inmobiliario, recorridos 360 y desarrollo web para proyectos.
-        Mi misión es elevar la forma en que se presentan los desarrollos a inversionistas, compradores y equipos de venta.
-    </p>
-</section>
-
-
-<!-- CTA FINAL -->
-<section class="cta-final fade-up">
-    <h2>Presenta tu proyecto con la claridad que tus clientes necesitan.</h2>
-    <a href="https://wa.me/+523122115603" target="_blank" class="btn-primary">Solicitar Cotización</a>
-</section>
-
-<!-- FOOTER SE INYECTA DESDE footer.js -->
-
-<script src="./scripts/navbar.js"></script>
-<script src="./scripts/footer.js"></script>
-<script src="./scripts/script.js"></script>
-
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
