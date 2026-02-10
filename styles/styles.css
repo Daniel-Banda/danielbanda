@@ -2,6 +2,23 @@
    BASE GENERAL
 ---------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* Colors */
+    --bg-dark: #0A0A0A;
+    --bg-card: #111111;
+    --text-main: #FFFFFF;
+    --text-muted: #CFCFCF;
+    --accent-gold: #C9A862;
+    --border-color: rgba(255, 255, 255, 0.08);
+
+    /* Fonts */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-accent: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,24 +26,51 @@
 }
 
 body {
-    background: #0A0A0A;
-    color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
     overflow-x: hidden;
 }
 
-img, video {
+img,
+video {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 6px;
 }
 
+
+
+.stagger>* {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.stagger>*:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stagger>*:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stagger>*:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stagger>*:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+
 /* ----------------------------------------------------------
    TIPOGRAFÍA PRINCIPAL
 ---------------------------------------------------------- */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
@@ -70,7 +114,7 @@ h1, h2, h3 {
 }
 
 .btn-secondary:hover {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* ----------------------------------------------------------
@@ -81,32 +125,39 @@ h1, h2, h3 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;              /* ← nunca 100vw */
+    width: 100%;
+    /* ← nunca 100vw */
     padding: 16px 32px;
     backdrop-filter: blur(12px);
     background: rgba(10, 10, 10, 0.65);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 999;
-    box-sizing: border-box;   /* ← IMPORTANTE */
-    overflow: hidden;         /* ← jamás permitirá desbordes visuales */
+    box-sizing: border-box;
+    /* ← IMPORTANTE */
+    overflow: hidden;
+    /* ← jamás permitirá desbordes visuales */
 }
 
 .nav-container {
-    max-width: 1300px;        /* ajustable */
+    max-width: 1300px;
+    /* ajustable */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;              /* ← asegura que nunca crece de más */
+    width: 100%;
+    /* ← asegura que nunca crece de más */
     gap: 16px;
-    flex-wrap: nowrap;        /* ← evita que el logo o menú brinquen */
+    flex-wrap: nowrap;
+    /* ← evita que el logo o menú brinquen */
 }
 
 .nav-links {
     display: flex;
     gap: clamp(12px, 2.2vw, 28px);
     list-style: none;
-    white-space: nowrap;      /* ← evita salto NO deseado */
+    white-space: nowrap;
+    /* ← evita salto NO deseado */
 }
 
 .logo {
@@ -158,13 +209,14 @@ h1, h2, h3 {
         gap: 25px;
         text-align: center;
         background: #0D0D0D;
-        border-top: 1px solid rgba(255,255,255,0.08);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .nav-links.mobile-active a {
         font-size: 1.3rem;
     }
 }
+
 /* ----------------------------------------------------------
    HERO CON VIDEO FULLSCREEN
 ---------------------------------------------------------- */
@@ -173,7 +225,8 @@ h1, h2, h3 {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding-top: 90px; /* espacio bajo navbar */
+    padding-top: 90px;
+    /* espacio bajo navbar */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -186,7 +239,8 @@ h1, h2, h3 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.35; /* suavizado elegante */
+    opacity: 0.35;
+    /* suavizado elegante */
     z-index: -2;
 }
 
@@ -197,7 +251,7 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     z-index: -1;
 }
 
@@ -246,7 +300,8 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: 50% 50%;
     min-height: 100vh;
-    padding-top: 90px; /* espacio bajo navbar */
+    padding-top: 90px;
+    /* espacio bajo navbar */
 }
 
 .hero-left {
@@ -352,7 +407,7 @@ h1, h2, h3 {
 .service-card {
     background: #111;
     padding: 40px 30px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 6px;
     min-height: 220px;
     transition: 0.3s ease;
@@ -369,6 +424,82 @@ h1, h2, h3 {
 
 .service-card p {
     color: #CFCFCF;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    /* Divider subtle */
+    padding-top: 20px;
+}
+
+.service-list li {
+    margin-bottom: 12px;
+    color: #B0B0B0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.service-list li::before {
+    content: "•";
+    color: #C9A862;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #C9A862;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    background: rgba(201, 168, 98, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* PHILOSOPHY SECTION */
+.philosophy-section {
+    padding: 140px 12%;
+    background: linear-gradient(to bottom, #0A0A0A, #111 50%, #0A0A0A);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.philosophy-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.philosophy-text {
+    font-size: 1.5rem;
+    /* Larger, statement text */
+    line-height: 1.8;
+    color: #E0E0E0;
+    font-family: 'Playfair Display', serif;
+    /* Elegant font for this section */
+    font-style: italic;
+}
+
+.philosophy-text strong {
+    color: #C9A862;
+    font-weight: 400;
 }
 
 @media(max-width: 900px) {
@@ -395,7 +526,7 @@ h1, h2, h3 {
     overflow: hidden;
     margin: auto;
     max-width: 1400px;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     background: #000;
 }
 
@@ -440,7 +571,7 @@ h1, h2, h3 {
     border-radius: 6px;
     padding: 30px 25px;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 1.1rem;
 }
 
@@ -455,7 +586,8 @@ h1, h2, h3 {
 ---------------------------------------------------------- */
 /* Alterna el orden de columnas */
 .demo-block.reverse {
-    grid-template-columns: 1.2fr 1fr; /* más peso a la media */
+    grid-template-columns: 1.2fr 1fr;
+    /* más peso a la media */
 }
 
 .demo-block.reverse .demo-media {
@@ -541,8 +673,10 @@ h1, h2, h3 {
 ---------------------------------------------------------- */
 
 .demo-light {
-    background: #F2F2F2;       /* Fondo claro premium */
-    color: #111;               /* Texto oscuro */
+    background: #F2F2F2;
+    /* Fondo claro premium */
+    color: #111;
+    /* Texto oscuro */
     padding: 120px 12%;
     border-radius: 0;
 }
@@ -573,8 +707,9 @@ h1, h2, h3 {
 
 /* Media */
 .demo-light .demo-media {
-    border: 1px solid rgba(0,0,0,0.15);
-    background: #000; /* Mantener negro porque es donde va el tour */
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #000;
+    /* Mantener negro porque es donde va el tour */
 }
 
 
@@ -638,14 +773,24 @@ h1, h2, h3 {
    CTA FINAL
 ---------------------------------------------------------- */
 
+/* ----------------------------------------------------------
+   CTA FINAL REFINADO
+---------------------------------------------------------- */
+
 .cta-final {
-    padding: 120px 12%;
+    padding: 140px 12%;
     text-align: center;
+    background: #0D0D0D;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .cta-final h2 {
-    font-size: 2.4rem;
-    margin-bottom: 25px;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -729,7 +874,7 @@ h1, h2, h3 {
     margin-top: 50px;
     border: none;
     height: 1px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 /* Bottom */
@@ -807,19 +952,100 @@ h1, h2, h3 {
 }
 
 /* Stagger */
-.stagger > * {
+.stagger>* {
     opacity: 0;
     transform: translateY(20px);
 }
 
-.stagger.animate > * {
+.stagger.animate>* {
     opacity: 1;
     transform: translateY(0);
 }
 
-.stagger.animate > *:nth-child(1) { transition-delay: 0.1s; }
-.stagger.animate > *:nth-child(2) { transition-delay: 0.2s; }
-.stagger.animate > *:nth-child(3) { transition-delay: 0.3s; }
-.stagger.animate > *:nth-child(4) { transition-delay: 0.4s; }
-.stagger.animate > *:nth-child(5) { transition-delay: 0.5s; }
+.stagger.animate>*:nth-child(1) {
+    transition-delay: 0.1s;
+}
 
+.stagger.animate>*:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.stagger.animate>*:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.stagger.animate>*:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.stagger.animate>*:nth-child(5) {
+    transition-delay: 0.5s;
+}/* ----------------------------------------------------------
+   DROPDOWN MENU
+---------------------------------------------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #DADADA;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #C9A862;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile Dropdown adjustment */
+@media(max-width: 950px) {
+    .dropdown:hover .dropdown-content {
+        display: none;
+        /* Disable hover on mobile */
+    }
+
+    .dropdown .dropbtn::after {
+        content: ' ▾';
+    }
+
+    .dropdown-content {
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding-left: 0;
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: flex;
+    }
+}

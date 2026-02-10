@@ -9,11 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="/" class="logo">DANIEL BANDA</a>
 
             <ul class="nav-links">
-                <li><a href="/#services">Servicios</a></li>
-                <li><a href="/#demo">Demo</a></li>
+                <li class="dropdown">
+                    <a href="/#services" class="dropbtn">Servicios ▾</a>
+                    <div class="dropdown-content">
+                        <a href="/services/recorridos-360.html">Recorridos 360°</a>
+                        <a href="/services/produccion-audiovisual.html">Foto & Video</a>
+                        <a href="/services/desarrollo-web.html">Desarrollo Web</a>
+                        <a href="/services/agentes-ia.html">Agentes IA</a>
+                    </div>
+                </li>
+                <li><a href="/#demo">Portafolio</a></li>
                 <li><a href="/#process">Proceso</a></li>
-                <li><a href="/#about">Sobre mí</a></li>
-                <li><a href="../PlantillaLandingPage.html">plantilla</a></li>
+                <li><a href="/#about">Nosotros</a></li>
             </ul>
 
             <div class="menu-toggle" id="mobile-menu">☰</div>

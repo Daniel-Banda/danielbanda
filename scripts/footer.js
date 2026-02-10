@@ -26,18 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
 
-            <!-- Columna enlaces rápidos 
+            <!-- Columna enlaces rápidos -->
             <div class="footer-col footer-links">
-                <h3>Enlaces Rápidos</h3>
+                <h3>Explorar</h3>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/#services">Servicios</a></li>
-                    <li><a href="/#about">Sobre mí</a></li>
-                    <li><a href="/#contact">Contacto</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos & Condiciones</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/services/recorridos-360.html">Recorridos 360</a></li>
+                    <li><a href="/services/produccion-audiovisual.html">Producción AV</a></li>
+                    <li><a href="/services/desarrollo-web.html">Desarrollo Web</a></li>
+                    <li><a href="/services/agentes-ia.html">Agentes IA</a></li>
+                    <li><a href="/#demo">Portafolio</a></li>
                 </ul>
-            </div> -->
+            </div>
 
             <!-- Columna contacto -->
             <div class="footer-col footer-contact">
