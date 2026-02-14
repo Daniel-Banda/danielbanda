@@ -10,16 +10,63 @@
 
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero">
-        <div class="container">
-            <h1 class="hero-title">
-                El sistema para crear webs profesionales <br>
-                <span class="highlight">sin escribir código.</span>
-            </h1>
-            <p class="hero-subtitle">
-                Desarrollo web profesional para no-Desarrolladores.
-            </p>
+    <!-- HERO SECTION (HOMELO STYLE) -->
+    <header class="hero mega-hero">
+        <div class="mega-hero-bg-text">WORKSHOP</div>
+        <div class="container relative-container">
+
+            <div class="hero-top-bar">
+                <span class="pill-badge">Desarrollo Web Profesional</span>
+                <span class="pill-badge-outline">No-Code</span>
+            </div>
+
+            <div class="hero-main-content">
+                <h1 class="hero-title-overlay">
+                    TU WEB <br>
+                    <span class="highlight">SIN CÓDIGO</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    El sistema definitivo para crear sitios profesionales sin escribir una sola línea de código.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="https://payhip.com/order?link=YIaTp&pricing_plan=PjWlkq70Gv" target="_blank"
+                        class="btn btn-primary glow-effect">Reservar Lugar</a>
+
+                    <div class="hero-price-group">
+                        <span class="price-small">Oferta:</span>
+                        <span class="price-big">$17 USD</span>
+                    </div>
+                </div>
+
+                <!-- Countdown on independent line -->
+                <div class="countdown-row fade-in-up">
+                    <p class="countdown-label-row">La oferta termina en:</p>
+                    <div id="countdown" class="countdown-timer-row">
+                        <div class="time-block-row">
+                            <span id="days">00</span>
+                            <small>Días</small>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="time-block-row">
+                            <span id="hours">00</span>
+                            <small>Hrs</small>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="time-block-row">
+                            <span id="minutes">00</span>
+                            <small>Min</small>
+                        </div>
+                        <div class="separator">:</div>
+                        <div class="time-block-row">
+                            <span id="seconds">00</span>
+                            <small>Seg</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </header>
 
@@ -112,7 +159,7 @@
                     <li>✅ Y en menos de 3 horas</li>
                 </ul>
                 <br>
-                <a href="https://payhip.com/order?link=YIaTp&pricing_plan=1QW9oeeeB6"
+                <a href="https://payhip.com/order?link=YIaTp&pricing_plan=PjWlkq70Gv"
                     class="btn btn-primary glow-effect" target="_blank">Reservar mi lugar con 30% OFF</a>
             </div>
         </div>
@@ -170,21 +217,25 @@
     <!-- OFFER / CTA -->
     <section id="register" class="section">
         <div class="container">
-            <div class="workshop-details">
+            <div class="workshop-details glow-border">
                 <div class="workshop-info">
-                    <h3>Workshop: Tu Web Sin Código</h3>
-                    <p>📅 Fecha: Sábado 21 de Febrero</p>
-                    <p>📍 Modalidad: Online (En Vivo)</p>
-                    <p>🎓 Requisitos: Computadora y conexión a internet</p>
+                    <h3>Workshop Masterclass: <br> <span class="highlight">Tu Web Sin Código</span></h3>
+                    <ul class="benefit-list-cta">
+                        <li>📅 <strong>Fecha:</strong> Sábado 21 de Febrero - 17:00 (Hora CDMX)</li>
+                        <li>📍 <strong>Modalidad:</strong> Online (En Vivo via Zoom)</li>
+                        <li>🎓 <strong>Incluye:</strong> Grabación de por vida + Recursos</li>
+                    </ul>
                 </div>
 
                 <div class="workshop-price">
-                    <span class="discount-badge">30% DESCUENTO POR LANZAMIENTO</span>
-                    <span class="price-note">Precio Regular: $69 USD</span>
-                    <span class="price-tag">$49 USD</span>
-                    <a href="https://payhip.com/order?link=YIaTp&pricing_plan=PAWgrk4KGK"
-                        class="btn btn-primary mt-20 glow-effect" target="_blank">QUIERO INSCRIBIRME</a>
-                    <p style="font-size: 0.8rem; margin-top: 10px; color: #666;">*Haz click para asegurar tu lugar</p>
+                    <span class="discount-badge">OFERTA POR TIEMPO LIMITADO</span>
+                    <div class="price-container">
+                        <span class="price-note">Precio Regular: $25 USD</span>
+                        <span class="price-tag">$17 USD</span>
+                    </div>
+                    <a href="https://payhip.com/order?link=YIaTp&pricing_plan=PjWlkq70Gv"
+                        class="btn btn-primary mt-20 glow-effect btn-block" target="_blank">QUIERO INSCRIBIRME AHORA</a>
+                    <p class="guarantee-text">🔒 Pago 100% Seguro · Garantía de Satisfacción</p>
                 </div>
             </div>
         </div>
@@ -197,6 +248,7 @@
         </div>
     </footer>
 
+    <script src="./scripts/workshop.js"></script>
 </body>
 
 </html>

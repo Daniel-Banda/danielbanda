@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </li>
                 <li><a href="/#demo">Portafolio</a></li>
+                <li><a href="/workshop.html" style="color: #C9A862; font-weight: bold;">Workshop Live</a></li>
                 <li><a href="/#process">Proceso</a></li>
                 <li><a href="/#about">Nosotros</a></li>
             </ul>
