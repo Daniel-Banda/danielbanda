@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Banda | Real Estate Media & 360 Experiences</title>
+    <title>Daniel Banda | Servicios Digitales Inmobiliarios</title>
+    <meta name="description" content="Fotografía, video cinemático, desarrollo web, gestión de redes y campañas publicitarias para el sector inmobiliario. Haz que cada propiedad hable por sí sola.">
 
     <link rel="stylesheet" href="./styles/styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
     <!-- Meta Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -26,301 +26,298 @@
         fbq('init', '1879193476246704');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1879193476246704&ev=PageView&noscript=1" /></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1879193476246704&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
 
 <body>
 
-    <!-- NAVBAR SE INYECTA DESDE navbar.js -->
+    <!-- NAVBAR INYECTADO -->
 
-    <!-- HERO PREMIUM -->
-    <header class="hero-new fade-in">
-
-        <!-- Video de fondo -->
-        <video class="hero-video-bg" autoplay muted loop playsinline>
+    <!-- ═══════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════ -->
+    <header class="hero fade-in" id="inicio">
+        <video class="hero-video" autoplay muted loop playsinline>
             <source src="./assets/video/Bannerwebfn2.mp4" type="video/mp4">
         </video>
-
-        <!-- Overlay oscuro opcional -->
         <div class="hero-overlay"></div>
 
-        <!-- Contenido -->
-        <div class="hero-content">
-            <h1 class="hero-title">
-                Conectando Propiedades <br>
-                <span class="gold">con Personas en la Era Digital.</span>
+        <div class="hero-content container">
+            <div class="hero-eyebrow">
+                <span class="dot"></span>
+                <span>Servicios Digitales Inmobiliarios</span>
+            </div>
+
+            <h1 class="hero-headline">
+                Haz que cada<br>
+                <em>propiedad</em><br>
+                hable por sí sola.
             </h1>
 
-            <p class="hero-subtitle">
-                Soluciones visuales y tecnológicas integrales para el sector inmobiliario: <br>
-                Tours 360, Producción Audiovisual y Desarrollo Web Estratégico.
+            <p class="hero-sub">
+                Contenido visual estratégico diseñado para acelerar ventas,
+                generar confianza y posicionar tus desarrollos ante compradores calificados.
             </p>
+
+            <div class="hero-tags">
+                <span class="tag">Fotografía</span>
+                <span class="tag">Video Cinemático</span>
+                <span class="tag">Desarrollo Web</span>
+                <span class="tag">Redes Sociales</span>
+                <span class="tag">Campañas Publicitarias</span>
+            </div>
 
             <div class="hero-actions">
-                <a href="#services" class="btn-primary">Ver Servicios</a>
-                <a href="https://wa.me/+523122115603" target="_blank" class="btn-secondary">Contactar</a>
+                <a href="#portafolio" class="btn-primary">Ver Portafolio</a>
+                <a href="https://wa.me/+523122115603" target="_blank" class="btn-ghost">Agendar Consulta</a>
             </div>
         </div>
 
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
     </header>
 
+    <!-- ═══════════════════════════════════════════════
+         SERVICIOS
+    ═══════════════════════════════════════════════ -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Lo que hago</span>
+                <h2 class="title-massive">SERVICIOS.</h2>
+            </div>
 
+            <div class="services-list stagger">
 
-    <!-- STATS PREMIUM -->
-    <section class="stats stagger">
-        <div class="stat-item">
-            <h2>41%</h2>
-            <p>Aumenta la confianza del comprador cuando el proyecto incluye visualizaciones inmersivas</p>
-        </div>
-        <div class="stat-item">
-            <h2>95%</h2>
-            <p>De los compradores buscan propiedades online antes de visitar físicamente</p>
-        </div>
-        <div class="stat-item">
-            <h2>+8</h2>
-            <p>Años de experiencia combinada</p>
-        </div>
-        <div class="stat-item">
-            <h2>67%</h2>
-            <p>Los proyectos con contenido visual profesional se perciben como de mayor valor</p>
+                <!-- 01 -->
+                <div class="service-row" id="srv-foto">
+                    <div class="srv-num">01</div>
+                    <div class="srv-body">
+                        <h3>Fotografía<br>Inmobiliaria</h3>
+                        <p>Imágenes HDR de alto impacto que muestran cada espacio en su máxima expresión. Desde interiores de lujo hasta exteriores y amenidades, con retoque editorial profesional.</p>
+                    </div>
+                    <div class="srv-tags">
+                        <span>HDR</span>
+                        <span>Aéreo</span>
+                        <span>Retoque Pro</span>
+                    </div>
+                    <a href="#portafolio" class="srv-link" aria-label="Ver fotografía">→</a>
+                </div>
+
+                <!-- 02 -->
+                <div class="service-row" id="srv-video">
+                    <div class="srv-num">02</div>
+                    <div class="srv-body">
+                        <h3>Video<br>Cinemático</h3>
+                        <p>Producción en 4K con narrativa cinematográfica y tomas aéreas con dron. Films de lifestyle que generan emoción y transmiten el valor real de cada desarrollo.</p>
+                    </div>
+                    <div class="srv-tags">
+                        <span>4K</span>
+                        <span>Dron</span>
+                        <span>Lifestyle</span>
+                    </div>
+                    <a href="#portafolio" class="srv-link" aria-label="Ver video">→</a>
+                </div>
+
+                <!-- 03 -->
+                <div class="service-row" id="srv-web">
+                    <div class="srv-num">03</div>
+                    <div class="srv-body">
+                        <h3>Desarrollo<br>Web</h3>
+                        <p>Sitios web y landing pages de alto rendimiento diseñados para convertir. Integraciones con CRM, formularios de captación y SEO técnico para el sector inmobiliario.</p>
+                    </div>
+                    <div class="srv-tags">
+                        <span>Landing Pages</span>
+                        <span>SEO</span>
+                        <span>CRM</span>
+                    </div>
+                    <a href="#portafolio" class="srv-link" aria-label="Ver web">→</a>
+                </div>
+
+                <!-- 04 -->
+                <div class="service-row" id="srv-redes">
+                    <div class="srv-num">04</div>
+                    <div class="srv-body">
+                        <h3>Gestión de<br>Redes Sociales</h3>
+                        <p>Estrategia editorial, creación de contenido y manejo de comunidad en Instagram, Facebook y TikTok. Tu marca inmobiliaria activa y presente donde están tus compradores.</p>
+                    </div>
+                    <div class="srv-tags">
+                        <span>Instagram</span>
+                        <span>TikTok</span>
+                        <span>Editorial</span>
+                    </div>
+                    <a href="#portafolio" class="srv-link" aria-label="Ver redes">→</a>
+                </div>
+
+                <!-- 05 -->
+                <div class="service-row" id="srv-ads">
+                    <div class="srv-num">05</div>
+                    <div class="srv-body">
+                        <h3>Campañas<br>Publicitarias</h3>
+                        <p>Campañas de performance en Meta Ads y Google Ads optimizadas para captación de leads calificados. Estrategia de embudo completa, desde la atención hasta el cierre.</p>
+                    </div>
+                    <div class="srv-tags">
+                        <span>Meta Ads</span>
+                        <span>Google Ads</span>
+                        <span>Lead Gen</span>
+                    </div>
+                    <a href="#portafolio" class="srv-link" aria-label="Ver campañas">→</a>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- DEMO PREMIUM -->
-    <section id="demo" class="demo-split demo-light">
+    <!-- ═══════════════════════════════════════════════
+         VENTAJA / POR QUÉ YO
+    ═══════════════════════════════════════════════ -->
+    <section class="advantage" id="ventaja">
+        <div class="container advantage-layout fade-up">
+            <div class="advantage-left">
+                <span class="eyebrow">Por qué elegirme</span>
+                <h2 class="advantage-title">
+                    La tecnología <em>sola</em><br>
+                    no vende.<br>
+                    La emoción sí.
+                </h2>
+            </div>
+            <div class="advantage-right">
+                <p class="advantage-intro">
+                    Combino estrategia digital, producción visual de alto nivel y conocimiento profundo del sector inmobiliario para entregar resultados medibles: más visibilidad, más leads, más cierres.
+                </p>
+                <ul class="advantage-list">
+                    <li>
+                        <span class="a-num">01</span>
+                        <div>
+                            <strong>Disponibilidad 24/7</strong>
+                            <p>Tu contenido trabaja por ti en todo momento, sin agentes presentes.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="a-num">02</span>
+                        <div>
+                            <strong>Compradores a distancia</strong>
+                            <p>Genera confianza real en inversores y compradores que no pueden visitar la propiedad.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="a-num">03</span>
+                        <div>
+                            <strong>Resultados aceleradores</strong>
+                            <p>Propiedades con contenido profesional se venden hasta 3× más rápido.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="a-num">04</span>
+                        <div>
+                            <strong>Estrategia integral</strong>
+                            <p>Un solo aliado para toda tu presencia digital: creación, gestión y captación.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+    <!-- ═══════════════════════════════════════════════
+         PROCESO
+    ═══════════════════════════════════════════════ -->
+    <section class="process" id="proceso">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="eyebrow">Cómo trabajo</span>
+                <h2 class="title-massive">PROCESO.</h2>
+            </div>
 
-        <div class="demo-block fade-up">
-            <div class="demo-text">
-                <h3>Demo - Casa Cascada</h3>
-                <p>Explora un recorrido inmersivo que combina renders, imágenes y video en un solo tour interactivo.
+            <div class="process-steps stagger">
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <div class="step-line"></div>
+                    <h3>Brief</h3>
+                    <p>Reunión inicial para entender tu proyecto, objetivos de venta, público objetivo y cronograma de entrega.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <div class="step-line"></div>
+                    <h3>Producción</h3>
+                    <p>Sesión de fotografía, grabación de video, diseño web o configuración de campañas según el paquete acordado.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <div class="step-line"></div>
+                    <h3>Entrega</h3>
+                    <p>Archivos finales retocados, sitio web publicado o campañas activadas. Todo en tiempo y calidad garantizados.</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">04</div>
+                    <div class="step-line"></div>
+                    <h3>Seguimiento</h3>
+                    <p>Reporte de métricas, ajustes de campaña y soporte continuo para maximizar los resultados de tu proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    Una experiencia diseñada para presentar cada espacio con claridad y emoción, ideal para mostrar
-                    proyectos en cualquier etapa de construcción y acelerar decisiones de compra.</p>
+    <!-- ═══════════════════════════════════════════════
+         SOBRE MÍ
+    ═══════════════════════════════════════════════ -->
+    <section class="about" id="sobre-mi">
+        <div class="container about-layout fade-up">
+            <div class="about-label">
+                <span class="eyebrow">Sobre mí</span>
+                <h2 class="about-name">Daniel<br>Banda.</h2>
+            </div>
+            <div class="about-content">
+                <p class="about-lead">
+                    Especialista en contenido digital y estrategia de marketing para el sector inmobiliario. Combino producción visual de alto nivel con tecnología y datos para ayudar a desarrolladores, agencias y agentes a vender más rápido y con mayor margen.
+                </p>
+                <p class="about-body">
+                    Con años de experiencia en el mercado inmobiliario de México, entiendo que el comprador de hoy toma decisiones basadas en emociones y confianza. Mi misión es ayudarte a comunicar el valor real de cada propiedad a través de contenido que convierte.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-num">+50</span>
+                        <span class="stat-label">Propiedades documentadas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">+30</span>
+                        <span class="stat-label">Clientes satisfechos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">Servicios integrados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <a href="https://www.3dvista.com/samples/real_estate_virtual_tour.html" target="_blank"
-                    class="btn-primary">
-                    Abrir en pestaña nueva
+    <!-- ═══════════════════════════════════════════════
+         CTA FINAL
+    ═══════════════════════════════════════════════ -->
+    <section class="cta" id="contacto">
+        <div class="container">
+            <div class="cta-inner fade-up">
+                <span class="eyebrow">¿Listo para dar el siguiente paso?</span>
+                <h2 class="cta-massive">INICIEMOS.</h2>
+                <p class="cta-desc">
+                    Cuéntame sobre tu proyecto y diseñamos juntos la estrategia visual y digital que necesitas para acelerar tus ventas.
+                </p>
+                <a href="https://wa.me/+523122115603" target="_blank" class="btn-primary btn-large" id="cta-whatsapp">
+                    Agendar Consulta Gratis
                 </a>
-
-                <div class="demo-tip">Doble clic para ver en pantalla completa.</div>
-            </div>
-
-            <div class="demo-media">
-                <iframe src="https://www.3dvista.com/samples/real_estate_virtual_tour.html" frameborder="0"
-                    allowfullscreen allow="fullscreen" scrolling="no">
-                </iframe>
+                <p class="cta-note">Sin compromisos. Primera consulta sin costo.</p>
             </div>
         </div>
-
-        <div class="demo-block reverse fade-up">
-
-            <div class="demo-media">
-                <iframe src="https://www.3dvista.com/samples/zanzibar_villa_turquoise_virtual_tour.html" frameborder="0"
-                    allowfullscreen allow="fullscreen" scrolling="no">
-                </iframe>
-            </div>
-
-            <div class="demo-text">
-                <h3>Demo - Villa Turquose </h3>
-                <p>Descubre un recorrido inmersivo que conecta arquitectura, entorno y experiencia.
-
-                    Un tour que integra vistas aéreas, infografías, imágenes y video para comunicar la esencia del
-                    desarrollo, su filosofía, sus amenidades y su estilo de vida en una presentación visual clara y
-                    emocionante.</p>
-
-                <a href="https://www.3dvista.com/samples/zanzibar_villa_turquoise_virtual_tour.html" target="_blank"
-                    class="btn-secondary">
-                    Abrir en pestaña nueva
-                </a>
-
-                <div class="demo-tip">Doble clic para ver en pantalla completa.</div>
-            </div>
-
+        <div class="cta-brand-line">
+            Redefiniendo el estándar digital del mercado inmobiliario &mdash; Daniel Banda 2025
         </div>
     </section>
 
-
-    <!-- SERVICIOS MODERNOS -->
-    <section class="services-new" id="services">
-        <h2 class="section-title">Soluciones Integrales</h2>
-
-        <div class="service-cards stagger">
-            <!-- 360 TOURS -->
-            <a href="./services/recorridos-360.html" class="service-card sticker-link">
-                <div class="card-icon">
-                    <span class="icon-text">360°</span>
-                </div>
-                <h3>Tours Virtuales 360</h3>
-                <p>La herramienta definitiva para pre-venta y muestra remota. Permite a tus clientes caminar por la
-                    propiedad desde cualquier lugar.</p>
-                <ul class="service-list">
-                    <li>Recorridos Interiores y Aéreos</li>
-                    <li>Integración de Renders</li>
-                </ul>
-            </a>
-
-            <!-- PRODUCCIÓN -->
-            <a href="./services/produccion-audiovisual.html" class="service-card sticker-link">
-                <div class="card-icon">
-                    <span class="icon-text">REC</span>
-                </div>
-                <h3>Producción AV</h3>
-                <p>Contenido de alto impacto. Capturamos la esencia del estilo de vida con calidad cinematográfica.</p>
-                <ul class="service-list">
-                    <li>Fotografía HDR & Video</li>
-                    <li>Dron 4K & Reels</li>
-                </ul>
-            </a>
-
-            <!-- WEB DEVELOPMENT -->
-            <a href="./services/desarrollo-web.html" class="service-card sticker-link">
-                <div class="card-icon">
-                    <span class="icon-text">WEB</span>
-                </div>
-                <h3>Desarrollo Web</h3>
-                <p>Tu oficina digital abierta 24/7. Creamos sitios web optimizados para captación de leads.</p>
-                <ul class="service-list">
-                    <li>Landing Pages</li>
-                    <li>Sitios Corporativos</li>
-                </ul>
-            </a>
-
-            <!-- AI AGENTS -->
-            <a href="./services/agentes-ia.html" class="service-card sticker-link">
-                <div class="card-icon">
-                    <span class="icon-text">AI</span>
-                </div>
-                <h3>Agentes IA</h3>
-                <p>Automatiza tu atención al cliente. Chatbots que califican leads y agendan citas 24/7.</p>
-                <ul class="service-list">
-                    <li>Respuestas Inmediatas</li>
-                    <li>Calificación de Leads</li>
-                </ul>
-            </a>
-        </div>
-    </section>
-
-    <!-- PHILOSOPHY SECTION -->
-    <section class="philosophy-section fade-up">
-        <div class="philosophy-content">
-            <h2 class="section-title" style="margin-bottom: 30px;">Creando Conexiones Reales</h2>
-            <p class="philosophy-text">
-                En la era digital, la tecnología por sí sola no vende; <strong>vende la emoción y la claridad</strong>.
-                No solo entregamos "archivos" o "links". Entregamos herramientas estratégicas diseñadas para conectar
-                emocionalmente con el comprador y transmitir el verdadero valor de cada metro cuadrado.
-                <br><br>
-                Dejamos atrás la era de las fotos estáticas y los planos confusos para dar paso a experiencias
-                inmersivas que construyen confianza inmediata.
-            </p>
-        </div>
-    </section>
-
-    <!-- TOUR 360 DESTACADO -->
-    <section class="tour-container">
-        <h2 class="section-title">Lotificación</h2>
-
-        <div class="tour-wrapper">
-            <iframe src="./tour360/index.htm" frameborder="0" allowfullscreen allow="xr-spatial-tracking; fullscreen"
-                scrolling="no" class="tour-frame">
-            </iframe>
-        </div>
-
-        <p class="tour-tip">Doble clic para ver en pantalla completa.</p>
-    </section>
-
-
-
-    <section class="benefits">
-
-        <h2 class="section-title">El valor detrás de una buena presentación</h2>
-
-        <div class="benefits-grid stagger">
-
-            <div class="benefit-card">
-                Ahorra tiempo al equipo y reduce distancias.
-            </div>
-
-            <div class="benefit-card">
-                Disponible 24/7 para que los clientes exploren sin agendar visita.
-            </div>
-
-            <div class="benefit-card">
-                Filtra prospectos y te permite llegar a un mayor mercado.
-            </div>
-
-            <div class="benefit-card">
-                Centraliza renders, planos, fotos, video y 360 en una sola plataforma.
-            </div>
-
-            <div class="benefit-card">
-                Reduce dudas y acelera decisiones mostrando el proyecto con claridad.
-            </div>
-
-            <div class="benefit-card">
-                Presentación premium que eleva la percepción y el valor del desarrollo.
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- PROCESO EDITORIAL -->
-    <section class="process-new" id="process">
-        <h2 class="section-title">El Proceso</h2>
-
-        <div class="process-line stagger">
-            <div class="step">
-                <span>01</span>
-                <h3>Planificación</h3>
-                <p>Analizamos el proyecto y definimos objetivos comerciales.</p>
-            </div>
-
-            <div class="step">
-                <span>02</span>
-                <h3>Producción</h3>
-                <p>Foto, video, dron y tomas 360 en una jornada optimizada.</p>
-            </div>
-
-            <div class="step">
-                <span>03</span>
-                <h3>Desarrollo</h3>
-                <p>Diseño e integración de la experiencia web y el tour interactivo.</p>
-            </div>
-
-            <div class="step">
-                <span>04</span>
-                <h3>Entrega & Soporte</h3>
-                <p>Hosting, mantenimiento y soporte continuo.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ABOUT EDITORIAL -->
-    <section class="about-new fade-up" id="about">
-        <h2 class="section-title">Sobre Mí</h2>
-
-        <p class="about-text">
-            Soy Daniel Banda, creador visual especializado en contenido inmobiliario, recorridos 360 y desarrollo web
-            para proyectos.
-            Mi misión es elevar la forma en que se presentan los desarrollos a inversionistas, compradores y equipos de
-            venta.
-        </p>
-    </section>
-
-
-    <!-- CTA FINAL -->
-    <section class="cta-final fade-up">
-        <h2>Presenta tu proyecto con la claridad que tus clientes necesitan.</h2>
-        <a href="https://wa.me/+523122115603" target="_blank" class="btn-primary">Solicitar Cotización</a>
-    </section>
-
-    <!-- FOOTER SE INYECTA DESDE footer.js -->
+    <!-- FOOTER INYECTADO -->
 
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/footer.js"></script>

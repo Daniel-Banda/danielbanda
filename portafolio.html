@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Daniel Banda — Servicios Digitales Inmobiliarios</title>
+    <meta name="description" content="Trabajos seleccionados en fotografía inmobiliaria, video cinemático y desarrollo web para el sector inmobiliario.">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/portafolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR INYECTADO -->
+
+    <!-- ═══════════════════════════════════════════════
+         PAGE HEADER
+    ═══════════════════════════════════════════════ -->
+    <header class="pf-header">
+        <div class="container pf-header-inner">
+            <div class="pf-header-text fade-in">
+                <span class="eyebrow">Trabajos seleccionados</span>
+                <h1 class="pf-title">PORTAFOLIO.</h1>
+                <p class="pf-subtitle">Una selección de proyectos de fotografía, video y desarrollo web para el sector inmobiliario.</p>
+            </div>
+            <div class="pf-header-count fade-in">
+                <span id="pf-count">—</span>
+                <span class="pf-count-label">proyectos</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════
+         FILTER TABS
+    ═══════════════════════════════════════════════ -->
+    <div class="pf-filter-wrap" id="pf-filter-wrap">
+        <div class="container">
+            <div class="pf-filters" id="pf-filters" role="tablist">
+                <button class="pf-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                    <span class="filter-label">Todo</span>
+                    <span class="filter-count" id="fc-all">0</span>
+                </button>
+                <button class="pf-filter-btn" data-filter="fotografia" role="tab" aria-selected="false">
+                    <span class="filter-label">Fotografía</span>
+                    <span class="filter-count" id="fc-fotografia">0</span>
+                </button>
+                <button class="pf-filter-btn" data-filter="video" role="tab" aria-selected="false">
+                    <span class="filter-label">Video</span>
+                    <span class="filter-count" id="fc-video">0</span>
+                </button>
+                <button class="pf-filter-btn" data-filter="web" role="tab" aria-selected="false">
+                    <span class="filter-label">Desarrollo Web</span>
+                    <span class="filter-count" id="fc-web">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="pf-filter-line"></div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         PORTAFOLIO GRID
+    ═══════════════════════════════════════════════ -->
+    <main class="pf-main">
+        <div class="container">
+            <div class="pf-grid" id="pf-grid">
+
+                <!-- ── FOTOGRAFÍA ─────────────────── -->
+                <article class="pf-card" data-category="fotografia">
+                    <div class="pf-card-img" style="background-image: url('./assets/Img/casauno.jpg')">
+                        <div class="pf-card-overlay">
+                            <a href="#" class="pf-card-zoom" aria-label="Ver proyecto">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge fotografia">Fotografía</span>
+                        <h2 class="pf-card-title">Residencia Privada — Colima</h2>
+                        <p class="pf-card-desc">Sesión completa de interiores y exteriores. Fotografía HDR con retoque editorial para presentación comercial.</p>
+                        <div class="pf-card-tags">
+                            <span>Interiores</span>
+                            <span>HDR</span>
+                            <span>Retoque Pro</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pf-card" data-category="fotografia">
+                    <div class="pf-card-img" style="background-image: url('./assets/Img/casa3.jpg')">
+                        <div class="pf-card-overlay">
+                            <a href="#" class="pf-card-zoom" aria-label="Ver proyecto">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge fotografia">Fotografía</span>
+                        <h2 class="pf-card-title">Desarrollo Residencial — Amenidades</h2>
+                        <p class="pf-card-desc">Cobertura completa de áreas comunes, amenidades y unidades habitacionales con enfoque en lifestyle.</p>
+                        <div class="pf-card-tags">
+                            <span>Amenidades</span>
+                            <span>Exterior</span>
+                            <span>Lifestyle</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pf-card" data-category="fotografia">
+                    <div class="pf-card-img" style="background-image: url('./assets/Img/casacinco.jpg')">
+                        <div class="pf-card-overlay">
+                            <a href="#" class="pf-card-zoom" aria-label="Ver proyecto">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge fotografia">Fotografía</span>
+                        <h2 class="pf-card-title">Casa Familiar — Preventa</h2>
+                        <p class="pf-card-desc">Fotografía arquitectónica para campaña de preventa. Material para redes sociales, portales y brochure digital.</p>
+                        <div class="pf-card-tags">
+                            <span>Arquitectónica</span>
+                            <span>Preventa</span>
+                            <span>Editorial</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ── VIDEO ──────────────────────── -->
+
+                <!-- Video 1 — Reel De Los Olivos 2 (destacado, ancho) -->
+                <article class="pf-card pf-card--video-feature" data-category="video">
+                    <div class="pf-vimeo-wrap pf-vimeo-wide">
+                        <iframe src="https://player.vimeo.com/video/1184635924?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen
+                            title="Reel De Los Olivos 2">
+                        </iframe>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge video">Video Cinemático</span>
+                        <h2 class="pf-card-title">Reel De Los Olivos 2</h2>
+                        <p class="pf-card-desc">Reel de desarrollo residencial. Tomas aéreas, recorrido por amenidades y presentación de estilo de vida.</p>
+                        <div class="pf-card-tags"><span>Reel</span><span>Desarrollo</span><span>Dron</span></div>
+                    </div>
+                </article>
+
+                <!-- Video 2 — Cabaña -->
+                <article class="pf-card pf-card--video-reel" data-category="video">
+                    <div class="pf-vimeo-wrap pf-vimeo-vertical">
+                        <iframe src="https://player.vimeo.com/video/1180678814?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen
+                            title="Cabaña">
+                        </iframe>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge video">Video Cinemático</span>
+                        <h2 class="pf-card-title">Cabaña</h2>
+                        <p class="pf-card-desc">Video de presentación de propiedad tipo cabaña. Reel vertical optimizado para redes sociales.</p>
+                        <div class="pf-card-tags"><span>Reel</span><span>Social Media</span><span>Vertical</span></div>
+                    </div>
+                </article>
+
+                <!-- Video 3 — Reel Casa 09 -->
+                <article class="pf-card pf-card--video-reel" data-category="video">
+                    <div class="pf-vimeo-wrap pf-vimeo-vertical">
+                        <iframe src="https://player.vimeo.com/video/1184636300?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen
+                            title="Reel Casa 09">
+                        </iframe>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge video">Video Cinemático</span>
+                        <h2 class="pf-card-title">Reel Casa 09</h2>
+                        <p class="pf-card-desc">Reel de propiedad residencial con interiores, exteriores y lifestyle. Producción para campañas digitales.</p>
+                        <div class="pf-card-tags"><span>Reel</span><span>Interiores</span><span>Lifestyle</span></div>
+                    </div>
+                </article>
+
+                <!-- Video 4 — Reel como llegar a San Angel -->
+                <article class="pf-card pf-card--video-reel" data-category="video">
+                    <div class="pf-vimeo-wrap pf-vimeo-vertical">
+                        <iframe src="https://player.vimeo.com/video/1184635625?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen
+                            title="Reel cómo llegar a San Angel">
+                        </iframe>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge video">Video Cinemático</span>
+                        <h2 class="pf-card-title">Reel — Cómo llegar a San Ángel</h2>
+                        <p class="pf-card-desc">Video de ubicación y accesos para desarrollo inmobiliario. Narrativa de ruta optimizada para anuncios.</p>
+                        <div class="pf-card-tags"><span>Ubicación</span><span>Reel</span><span>Anuncio</span></div>
+                    </div>
+                </article>
+
+                <!-- Video 5 — Terreno Alvento -->
+                <article class="pf-card pf-card--video-reel" data-category="video">
+                    <div class="pf-vimeo-wrap pf-vimeo-vertical">
+                        <iframe src="https://player.vimeo.com/video/1184635547?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen
+                            title="Terreno Alvento">
+                        </iframe>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge video">Video Cinemático</span>
+                        <h2 class="pf-card-title">Terreno Alvento</h2>
+                        <p class="pf-card-desc">Presentación de terreno en desarrollo Alvento. Tomas aéreas y recorrido para preventa.</p>
+                        <div class="pf-card-tags"><span>Terreno</span><span>Dron</span><span>Preventa</span></div>
+                    </div>
+                </article>
+
+                <!-- Video 6 — Pfrecios Lotes -->
+                <article class="pf-card pf-card--video-reel" data-category="video">
+                    <div class="pf-vimeo-wrap pf-vimeo-vertical">
+                        <iframe src="https://player.vimeo.com/video/1184636981?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen
+                            title="Precios Lotes">
+                        </iframe>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge video">Video Cinemático</span>
+                        <h2 class="pf-card-title">Precios Lotes</h2>
+                        <p class="pf-card-desc">Reel informativo de precios y disponibilidad de lotes. Contenido directo para campañas de conversión.</p>
+                        <div class="pf-card-tags"><span>Lotes</span><span>Precios</span><span>Conversión</span></div>
+                    </div>
+                </article>
+
+                <!-- ── DESARROLLO WEB ──────────────── -->
+
+                <!-- 01 — Vive Elit -->
+                <article class="pf-card pf-card--wide" data-category="web">
+                    <div class="pf-card-img" style="background-image: url('./assets/Img/casacuatro.jpg')">
+                        <div class="pf-card-overlay">
+                            <a href="https://viveelitgrupoinmobiliario.com.mx/" target="_blank" rel="noopener" class="pf-card-zoom" aria-label="Visitar sitio">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                        <div class="pf-web-badge">viveelitgrupoinmobiliario.com.mx</div>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge web">Desarrollo Web</span>
+                        <h2 class="pf-card-title">Vive Elit — Grupo Inmobiliario</h2>
+                        <p class="pf-card-desc">Sitio web corporativo para grupo inmobiliario. Catálogo de propiedades, páginas de desarrollo, captación de leads y blog integrado.</p>
+                        <div class="pf-card-footer">
+                            <div class="pf-card-tags">
+                                <span>Next.js</span>
+                                <span>CRM</span>
+                                <span>SEO</span>
+                                <span>Inmobiliaria</span>
+                            </div>
+                            <a href="https://viveelitgrupoinmobiliario.com.mx/" target="_blank" rel="noopener" class="pf-visit-link">
+                                Visitar sitio
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 — THRTN -->
+                <article class="pf-card" data-category="web">
+                    <div class="pf-card-img" style="background-image: url('./assets/Img/plano.png')">
+                        <div class="pf-card-overlay">
+                            <a href="https://thrtn.co" target="_blank" rel="noopener" class="pf-card-zoom" aria-label="Visitar sitio">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                        <div class="pf-web-badge">thrtn.co</div>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge web">Desarrollo Web</span>
+                        <h2 class="pf-card-title">THRTN — Portafolio de Marca</h2>
+                        <p class="pf-card-desc">Sitio de portafolio y marca personal con estética editorial minimalista, cotizador interactivo y presupuestos en PDF.</p>
+                        <div class="pf-card-footer">
+                            <div class="pf-card-tags">
+                                <span>Next.js</span>
+                                <span>Editorial</span>
+                                <span>Portafolio</span>
+                            </div>
+                            <a href="https://thrtn.co" target="_blank" rel="noopener" class="pf-visit-link">
+                                Visitar sitio
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 03 — Morphid -->
+                <article class="pf-card" data-category="web">
+                    <div class="pf-card-img" style="background-image: url('./assets/Img/casauno.jpg')">
+                        <div class="pf-card-overlay">
+                            <a href="https://morphid.netlify.app" target="_blank" rel="noopener" class="pf-card-zoom" aria-label="Visitar sitio">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                        <div class="pf-web-badge">morphid.netlify.app</div>
+                    </div>
+                    <div class="pf-card-meta">
+                        <span class="pf-cat-badge web">Desarrollo Web</span>
+                        <h2 class="pf-card-title">Morphid — Web App</h2>
+                        <p class="pf-card-desc">Aplicación web con interfaz moderna, diseño responsivo y flujo de usuario optimizado para conversión.</p>
+                        <div class="pf-card-footer">
+                            <div class="pf-card-tags">
+                                <span>Web App</span>
+                                <span>Responsive</span>
+                                <span>UI/UX</span>
+                            </div>
+                            <a href="https://morphid.netlify.app" target="_blank" rel="noopener" class="pf-visit-link">
+                                Visitar sitio
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Empty state -->
+            <div class="pf-empty" id="pf-empty" style="display:none;">
+                <p>No hay proyectos en esta categoría todavía.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════
+         CTA
+    ═══════════════════════════════════════════════ -->
+    <section class="pf-cta">
+        <div class="container pf-cta-inner fade-up">
+            <h2 class="pf-cta-text">¿Tu proyecto<br><em>podría ser el siguiente?</em></h2>
+            <a href="https://wa.me/+523122115603" target="_blank" class="btn-primary btn-large" id="pf-cta-btn">
+                Agendar Consulta Gratis
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER INYECTADO -->
+
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/portafolio.js"></script>
+
+</body>
+
+</html>

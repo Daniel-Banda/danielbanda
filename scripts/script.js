@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hero aparece suavemente
     setTimeout(() => {
-        document.querySelector(".hero-new")?.classList.add("hero-loaded");
+        document.querySelector(".hero-thrtn")?.classList.add("hero-loaded");
         document.querySelector(".navbar")?.classList.add("hero-loaded");
     }, 200);
 

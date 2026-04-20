@@ -1,30 +1,22 @@
-// NAVBAR DINÁMICO PREMIUM
+// NAVBAR DINÁMICO — Daniel Banda Portafolio
 
 document.addEventListener("DOMContentLoaded", () => {
 
     const navbarHTML = `
-    <nav class="navbar">
+    <nav class="navbar" id="main-navbar">
         <div class="nav-container">
 
-            <a href="/" class="logo">DANIEL BANDA</a>
+            <a href="/" class="logo">DANIEL <span>BANDA</span></a>
 
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="/#services" class="dropbtn">Servicios ▾</a>
-                    <div class="dropdown-content">
-                        <a href="/services/recorridos-360.html">Recorridos 360°</a>
-                        <a href="/services/produccion-audiovisual.html">Foto & Video</a>
-                        <a href="/services/desarrollo-web.html">Desarrollo Web</a>
-                        <a href="/services/agentes-ia.html">Agentes IA</a>
-                    </div>
-                </li>
-                <li><a href="/#demo">Portafolio</a></li>
-                <li><a href="/workshop.html" style="color: #C9A862; font-weight: bold;">Workshop Live</a></li>
-                <li><a href="/#process">Proceso</a></li>
-                <li><a href="/#about">Nosotros</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/#servicios">Servicios</a></li>
+                <li><a href="/portafolio.html">Portafolio</a></li>
+                <li><a href="/#proceso">Proceso</a></li>
+                <li><a href="/#sobre-mi">Sobre mí</a></li>
+                <li><a href="https://wa.me/+523122115603" target="_blank" class="nav-cta">Contactar</a></li>
             </ul>
 
-            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menú">☰</button>
         </div>
     </nav>
     `;
@@ -33,9 +25,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mobile toggle
     const mobileMenu = document.getElementById("mobile-menu");
-    const navLinks = document.querySelector(".nav-links");
+    const navLinks   = document.getElementById("nav-links");
 
     mobileMenu.addEventListener("click", () => {
         navLinks.classList.toggle("mobile-active");
+        mobileMenu.textContent = navLinks.classList.contains("mobile-active") ? "✕" : "☰";
     });
+
+    // Cerrar al hacer click en un enlace (mobile)
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("mobile-active");
+            mobileMenu.textContent = "☰";
+        });
+    });
+
+    // Marcar enlace activo según hash
+    const links = navLinks.querySelectorAll("a:not(.nav-cta)");
+    const updateActive = () => {
+        links.forEach(link => {
+            const href = link.getAttribute("href");
+            if (href && window.location.hash && href.includes(window.location.hash)) {
+                link.style.color = "#C9A862";
+            } else {
+                link.style.color = "";
+            }
+        });
+    };
+    window.addEventListener("hashchange", updateActive);
 });
